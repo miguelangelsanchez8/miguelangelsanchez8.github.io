@@ -6,6 +6,14 @@
 <title>Miguel Ángel Sánchez Dionisio | Futbolista</title>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -57,6 +65,11 @@ h2 {
   background: #1d1d1d;
   padding: 18px;
   border-radius: 10px;
+  border: 1px solid #292929;
+}
+
+.dato strong {
+  color: #ff4317;
 }
 
 .historia {
@@ -72,6 +85,130 @@ h2 {
   font-weight: bold;
 }
 
+.superacion {
+  background: linear-gradient(135deg, #191919, #101010);
+  border-radius: 15px;
+  padding: 30px;
+  border-left: 5px solid #ff4317;
+}
+
+.superacion p {
+  color: #ddd;
+  font-size: 18px;
+}
+
+/* ENTREVISTA */
+
+.entrevista {
+  max-width: 950px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+.entrevista-titulo {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.entrevista-titulo span {
+  color: #ff4317;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+.entrevista-titulo h2 {
+  font-size: 42px;
+  margin: 10px 0;
+  color: #ff4317;
+}
+
+.entrevista-titulo p {
+  color: #aaa;
+  font-size: 17px;
+}
+
+.pregunta {
+  background: #1a1a1a;
+  border-left: 4px solid #ff4317;
+  padding: 28px;
+  margin-bottom: 25px;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.pregunta h3 {
+  color: #ff4317;
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.pregunta p {
+  color: #ddd;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.pregunta strong {
+  color: white;
+}
+
+/* AGRADECIMIENTOS */
+
+.agradecimientos {
+  background: #181818;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 35px;
+  border: 1px solid #ff4317;
+}
+
+.agradecimientos h3 {
+  color: #ff4317;
+  font-size: 24px;
+}
+
+.agradecimientos p {
+  color: #ddd;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* CUADRO FINAL */
+
+.final-entrevista {
+  text-align: center;
+  margin-top: 60px;
+  padding: 45px 20px;
+  border-radius: 20px;
+  background: #050505;
+  color: #ff4317;
+  border: 1px solid #ff4317;
+}
+
+.final-entrevista .pregunta-final {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #ff4317;
+}
+
+.final-entrevista h2 {
+  color: #ff4317;
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.final-entrevista p:last-child {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4317;
+}
+
+/* FOOTER */
+
 footer {
   text-align: center;
   padding: 30px;
@@ -79,13 +216,44 @@ footer {
   color: #999;
 }
 
+/* CELULAR */
+
 @media (max-width: 600px) {
+
   .datos {
     grid-template-columns: 1fr;
   }
 
   h1 {
     font-size: 34px;
+  }
+
+  header p {
+    font-size: 17px;
+  }
+
+  .numero {
+    font-size: 75px;
+  }
+
+  .entrevista-titulo h2 {
+    font-size: 32px;
+  }
+
+  .pregunta {
+    padding: 22px;
+  }
+
+  .pregunta h3 {
+    font-size: 19px;
+  }
+
+  .pregunta p {
+    font-size: 15px;
+  }
+
+  .final-entrevista h2 {
+    font-size: 30px;
   }
 }
 </style>
@@ -94,6 +262,7 @@ footer {
 <body>
 
 <header>
+
   <p>FUTBOLISTA MEXICANO</p>
 
   <h1>Miguel Ángel Sánchez Dionisio</h1>
@@ -101,7 +270,9 @@ footer {
   <p>Volante · Alebrijes · Liga TDP</p>
 
   <div class="numero">#8</div>
+
 </header>
+
 
 <section>
 
@@ -153,6 +324,7 @@ Tercera temporada con Alebrijes
 
 </section>
 
+
 <section>
 
 <h2>Mi historia</h2>
@@ -191,308 +363,295 @@ Su historia comenzó jugando fútbol en las calles de Villa Cuauhtémoc y hoy co
 
 </section>
 
+
 <section>
 
-<h2>El sueño continúa</h2>
+<h2>Superación</h2>
+
+<div class="superacion">
+
+<p>
+El camino de Miguel también ha tenido momentos difíciles. Una de las etapas más complicadas llegó después de sufrir dos fisuras en el tobillo izquierdo, situación que lo mantuvo alejado del fútbol profesional durante aproximadamente ocho meses.
+</p>
+
+<p>
+Durante ese periodo tuvo muchas caídas, no solamente físicas, sino también emocionales. Se sintió desubicado y atravesó momentos muy difíciles, llegando incluso a presentar indicios de depresión.
+</p>
+
+<p>
+Sin embargo, con el apoyo de su familia y de las personas que estuvieron a su lado, consiguió levantarse, recuperar la confianza y regresar nuevamente al fútbol profesional.
+</p>
+
+<p>
+Hace aproximadamente un mes también logró superar una distensión del ligamento colateral de la rodilla derecha. Cada lesión se convirtió en una prueba más de su capacidad para levantarse y seguir adelante.
+</p>
+
+<p>
+Hoy continúa trabajando para recuperar todo el tiempo perdido y seguir persiguiendo el sueño que comenzó cuando tenía solamente 6 años.
+</p>
 
 <div class="frase">
-De las calles de Villa Cuauhtémoc a la Liga TDP. El sueño comenzó a los 6 años y todavía se sigue escribiendo.
+
+El sueño continúa.
+
+<br><br>
+
+<em>
+“De las calles de Villa Cuauhtémoc a la Liga TDP. El sueño comenzó a los 6 años y todavía se sigue escribiendo.”
+</em>
+
+</div>
+
 </div>
 
 </section>
 
+
+<section class="entrevista">
+
+<div class="entrevista-titulo">
+
+<span>ENTREVISTA</span>
+
+<h2>El sueño continúa</h2>
+
+<p>
+Una charla sobre las caídas, las personas que estuvieron ahí y el regreso al fútbol profesional.
+</p>
+
+</div>
+
+
+<div class="pregunta">
+
+<h3>¿Qué pasó durante esos ocho meses?</h3>
+
+<p>
+Pues... la verdad fueron meses muy complicados. Tuve dos fisuras en el tobillo izquierdo y eso me obligó a dejar el fútbol profesional durante aproximadamente ocho meses.
+</p>
+
+<p>
+Pero creo que lo más difícil no solamente fue la lesión. Cuando dejas de hacer algo que has hecho toda tu vida, te empiezas a sentir raro, como que no sabes bien qué hacer.
+</p>
+
+<p>
+Yo sentía que estaba perdiendo todo lo que había construido. Tuve muchas caídas, momentos en los que emocionalmente no estaba bien y llegué a tener indicios de depresión.
+</p>
+
+<p>
+Pero también aprendí que no siempre se trata de ser fuerte todo el tiempo. Hay momentos en los que tienes que aceptar que no estás bien y buscar la manera de volver a levantarte.
+</p>
+
+</div>
+
+
+<div class="pregunta">
+
+<h3>¿Llegaste a pensar en dejar definitivamente el fútbol?</h3>
+
+<p>
+Sí, hubo momentos en los que lo pensé. No te voy a decir que nunca pasó por mi cabeza porque sí pasó.
+</p>
+
+<p>
+Cuando estás lesionado, cuando no estás jugando y además emocionalmente no estás bien, empiezas a cuestionarte muchas cosas.
+</p>
+
+<p>
+Yo veía a otras personas seguir jugando y sentía que me estaba alejando cada vez más de lo que quería. Pero en el fondo yo sabía que todavía quería jugar.
+</p>
+
+<p>
+Aunque estuviera perdido, aunque estuviera pasando por una etapa muy mala, el fútbol seguía siendo algo que quería para mi vida.
+</p>
+
+</div>
+
+
+<div class="pregunta">
+
+<h3>¿Quiénes fueron importantes para que pudieras salir de esa etapa?</h3>
+
+<p>
+Mi familia, sin duda. Y principalmente mi mamá, Luz Albeyda Dionisio Jiménez.
+</p>
+
+<p>
+Mi mamá ha caminado conmigo en todo. Me ha apoyado económicamente, me ha ayudado en muchísimas cosas y, sobre todo, siempre me ha dado ese empujón que necesitaba.
+</p>
+
+<p>
+Muchas veces yo estaba dudando de mí y ella seguía diciéndome que podía hacerlo.
+</p>
+
+</div>
+
+
+<div class="pregunta">
+
+<h3>¿Qué papel tuvo Zuri durante todo este proceso?</h3>
+
+<p>
+Zuri, mi pareja, también ha sido muy importante.
+</p>
+
+<p>
+Ella estuvo conmigo durante una etapa que no fue nada fácil. Y pues... yo sé que a veces puedo llegar a ser complicado.
+</p>
+
+<p>
+Me ha escuchado muchísimo. Me ha ayudado y ha estado conmigo cuando las cosas no estaban bien.
+</p>
+
+<p>
+Y creo que eso se valora muchísimo, porque es muy fácil estar con alguien cuando todo está bien.
+</p>
+
+<p>
+Lo difícil es quedarse cuando esa persona está pasando por un momento complicado. Y ella se quedó.
+</p>
+
+</div>
+
+
+<div class="pregunta">
+
+<h3>¿Qué significan Don Rudy y tu tío Julio para ti?</h3>
+
+<p>
+Don Rudy fue una persona muy especial para mí. Él ya no está con nosotros, pero fue fundamental en mi camino.
+</p>
+
+<p>
+Siempre me aconsejaba, siempre tenía algo que decirme y, sobre todo, él creía en mí.
+</p>
+
+<p>
+Para mí fue como un segundo padre. A veces me hubiera gustado que estuviera aquí para verme jugar otra vez.
+</p>
+
+<p>
+Pero me quedo con todo lo que me enseñó y con la manera en que siempre me apoyó.
+</p>
+
+<p>
+Mi tío Julio también fue muy importante. Él estuvo conmigo desde pequeño y me enseñó muchas cosas.
+</p>
+
+<p>
+Son personas que ya no están físicamente, pero de alguna manera siguen acompañándome.
+</p>
+
+</div>
+
+
+<div class="pregunta">
+
+<h3>¿Ahora que estás otra vez en el fútbol profesional, qué sientes?</h3>
+
+<p>
+Se siente diferente.
+</p>
+
+<p>
+Ahora sé lo que es estar ocho meses fuera, sé lo que es querer jugar y no poder. Sé lo que es estar lesionado, sentirte perdido y preguntarte si vas a volver.
+</p>
+
+<p>
+Entonces ahora disfruto mucho más cada entrenamiento y cada partido.
+</p>
+
+<p>
+No quiero desperdiciar esta oportunidad.
+</p>
+
+</div>
+
+
+<div class="pregunta">
+
+<h3>¿Qué aprendiste de todo esto?</h3>
+
+<p>
+Que puedes caerte muchas veces y aun así volver a levantarte.
+</p>
+
+<p>
+También aprendí que no tienes que poder con todo tú solo. A veces necesitas aceptar que no estás bien y pedir ayuda.
+</p>
+
+<p>
+Y creo que también aprendí a valorar más el fútbol. Porque cuando te lo quitan durante meses, entiendes cuánto lo extrañas.
+</p>
+
+<p>
+Porque cuando te quitan algo durante meses... ahí entiendes cuánto te importa.
+</p>
+
+</div>
+
+
+<div class="agradecimientos">
+
+<h3>A quienes estuvieron conmigo ❤️</h3>
+
+<p>
+Quiero agradecer especialmente a mi mamá, Luz Albeyda Dionisio Jiménez, por nunca dejar de apoyarme, por estar conmigo en todos los aspectos y por darme fuerzas cuando más las necesitaba.
+</p>
+
+<p>
+A Zuri Elizabeth Flores Alamilla, por acompañarme durante los momentos buenos y malos, por tenerme paciencia, escucharme y ayudarme a seguir adelante.
+</p>
+
+<p>
+A mi familia y a todas las personas que me han ayudado en este camino.
+</p>
+
+<p>
+A Don Rudy, quien en paz descanse, por haber creído en mí, por sus consejos y por haber sido como un segundo padre para mí.
+</p>
+
+<p>
+A mi tío Julio, quien en paz descanse, por todas las enseñanzas que me dejó.
+</p>
+
+<p>
+A todos ustedes, gracias. Una parte de la persona y del futbolista que soy hoy también se construyó gracias a ustedes.
+</p>
+
+</div>
+
+
+<div class="final-entrevista">
+
+<p class="pregunta-final">
+¿Entonces, el sueño sigue?
+</p>
+
+<h2>
+Sí. El sueño sigue.
+</h2>
+
+<p>
+Y ahora voy por más. ⚽
+</p>
+
+</div>
+
+</section>
+
+
 <footer>
+
 Miguel Ángel Sánchez Dionisio · Futbolista mexicano
+
+<br><br>
+
+<em>
+“El sueño continúa.” ⚽
+</em>
+
 </footer>
 
 </body>
 </html>
-<!-- SECCIÓN ENTREVISTA -->
-<section class="entrevista" id="entrevista">
-  <div class="entrevista-contenedor">
-
-    <div class="entrevista-titulo">
-      <span>🎙️ ENTREVISTA</span>
-      <h2>El sueño continúa</h2>
-      <p>Una charla sobre el camino, las caídas y el regreso al fútbol profesional.</p>
-    </div>
-
-    <div class="pregunta">
-      <h3>¿Qué pasó durante esos ocho meses?</h3>
-      <p>
-        Pues... la verdad fueron meses muy complicados. Tuve dos fisuras en el
-        tobillo izquierdo y eso me obligó a dejar el fútbol profesional durante
-        aproximadamente ocho meses.
-      </p>
-      <p>
-        Pero creo que lo más difícil no fue solamente la lesión. Cuando dejas
-        de hacer algo que has hecho prácticamente toda tu vida, te empiezas a
-        sentir raro, como que no sabes bien qué hacer o hacia dónde ir.
-      </p>
-      <p>
-        Yo me sentía así, desubicado. Tuve muchas caídas, momentos en los que
-        emocionalmente no estaba bien y llegué a tener indicios de depresión.
-        Había días en los que simplemente no encontraba la motivación para hacer
-        las cosas.
-      </p>
-      <p>
-        Y sí, hubo momentos en los que pensé que tal vez ya no iba a regresar.
-      </p>
-    </div>
-
-    <div class="pregunta">
-      <h3>¿Llegaste a pensar en dejar definitivamente el fútbol?</h3>
-      <p>
-        Sí, hubo momentos en los que lo pensé. No te voy a decir que nunca pasó
-        por mi cabeza porque sí pasó.
-      </p>
-      <p>
-        Cuando estás lesionado, cuando no estás jugando y además emocionalmente
-        no estás bien, empiezas a cuestionarte muchas cosas. Yo veía que pasaba
-        el tiempo y sentía que me estaba alejando cada vez más de lo que quería.
-      </p>
-      <p>
-        Pero en el fondo yo sabía que todavía quería jugar. Aunque estuviera
-        perdido, aunque estuviera pasando por una etapa muy mala, el fútbol
-        seguía siendo algo que quería para mi vida.
-      </p>
-    </div>
-
-    <div class="pregunta">
-      <h3>¿Quiénes fueron importantes para que pudieras salir de esa etapa?</h3>
-      <p>
-        Mi familia, sin duda. Y principalmente mi mamá,
-        <strong>Luz Albeyda Dionisio Jiménez</strong>.
-      </p>
-      <p>
-        Mi mamá ha estado conmigo en todo. Me ha apoyado económicamente, me ha
-        ayudado en muchísimas cosas y, sobre todo, siempre me ha dado ese aliento
-        de seguir adelante.
-      </p>
-      <p>
-        Muchas veces yo estaba dudando de mí y ella seguía diciéndome que podía
-        hacerlo. Creo que eso fue muy importante para mí porque cuando tú ya no
-        crees tanto en ti, necesitas a alguien que te recuerde por qué empezaste.
-      </p>
-      <p>
-        Y mi mamá siempre estuvo ahí.
-      </p>
-    </div>
-
-    <div class="pregunta">
-      <h3>¿Qué papel tuvo Zuri durante todo este proceso?</h3>
-      <p>
-        Zuri, <strong>Zuri Elizabeth Flores Alamilla</strong>, también ha sido
-        muy importante.
-      </p>
-      <p>
-        Ella estuvo conmigo durante una etapa que no fue nada fácil. Y pues...
-        yo sé que a veces puedo llegar a ser complicado. Tengo mis días malos,
-        mis problemas y aun así ella estuvo ahí.
-      </p>
-      <p>
-        Me ha ayudado muchísimo. Me ha escuchado, me ha apoyado y ha estado
-        conmigo cuando las cosas no estaban bien.
-      </p>
-      <p>
-        Y creo que eso se valora muchísimo, porque es muy fácil estar con alguien
-        cuando todo está bien. Lo difícil es quedarse cuando esa persona está
-        pasando por un momento complicado.
-      </p>
-      <p>
-        Y ella se quedó.
-      </p>
-    </div>
-
-    <div class="pregunta">
-      <h3>¿Qué significaron Don Rudy y tu tío Julio para ti?</h3>
-      <p>
-        Don Rudy fue una persona muy especial para mí. Él ya no está con
-        nosotros, en paz descanse, pero fue fundamental en mi camino.
-      </p>
-      <p>
-        Siempre me aconsejaba, siempre tenía algo que decirme y, sobre todo,
-        él creía mucho en mí. Para mí fue como un segundo padre.
-      </p>
-      <p>
-        A veces me hubiera gustado que estuviera aquí para verme regresar.
-        Para poder decirle que al final sí lo intenté otra vez, que no me
-        quedé tirado.
-      </p>
-      <p>
-        Y mi tío Julio también fue muy importante. Desde niño me ayudó muchísimo.
-        Me dio enseñanzas que todavía recuerdo y que forman parte de mí.
-      </p>
-    </div>
-
-    <div class="pregunta">
-      <h3>Ahora que estás otra vez en el fútbol profesional, ¿qué sientes?</h3>
-      <p>
-        Se siente diferente.
-      </p>
-      <p>
-        Ahora sé lo que es estar ocho meses fuera. Sé lo que es querer jugar y
-        no poder. Sé lo que es estar lesionado, sentirte perdido y preguntarte
-        si vas a volver.
-      </p>
-      <p>
-        Entonces ahora disfruto mucho más cada entrenamiento y cada partido.
-        No quiero desperdiciar esta oportunidad.
-      </p>
-    </div>
-
-    <div class="pregunta">
-      <h3>¿Qué aprendiste de todo esto?</h3>
-      <p>
-        Que puedes caerte muchas veces y aun así volver a levantarte.
-      </p>
-      <p>
-        También aprendí que no tienes que poder con todo tú solo. A veces
-        necesitas aceptar que no estás bien y dejar que las personas que te
-        quieren te ayuden.
-      </p>
-      <p>
-        Yo tuve personas que estuvieron conmigo cuando más lo necesitaba y eso
-        hizo una diferencia enorme.
-      </p>
-    </div>
-
-    <div class="pregunta">
-      <h3>¿Qué les dirías a las personas que estuvieron contigo?</h3>
-      <p>
-        Simplemente gracias.
-      </p>
-      <p>
-        Gracias a mi mamá, a Zuri, a mi familia, a mis amigos y a todas las
-        personas que de alguna manera me ayudaron.
-      </p>
-      <p>
-        Gracias a los que me dieron una palabra cuando no estaba bien, a los
-        que creyeron en mí y a los que me ayudaron a seguir.
-      </p>
-      <p>
-        Y también gracias a Don Rudy y a mi tío Julio por todo lo que hicieron
-        por mí. Aunque ya no estén aquí, siempre van a formar parte de mi historia.
-      </p>
-    </div>
-
-    <div class="final-entrevista">
-      <p class="pregunta-final">¿Entonces, el sueño sigue?</p>
-      <h2>Sí. El sueño sigue.</h2>
-      <p>Y ahora voy por más. ⚽❤️</p>
-    </div>
-
-  </div>
-</section>
-
-<style>
-.entrevista {
-  padding: 80px 20px;
-  background: linear-gradient(180deg, #080808, #111111);
-  color: white;
-}
-
-.entrevista-contenedor {
-  max-width: 900px;
-  margin: auto;
-}
-
-.entrevista-titulo {
-  text-align: center;
-  margin-bottom: 55px;
-}
-
-.entrevista-titulo span {
-  color: #00ff88;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.entrevista-titulo h2 {
-  font-size: 42px;
-  margin: 12px 0;
-}
-
-.entrevista-titulo p {
-  color: #aaa;
-  font-size: 17px;
-}
-
-.pregunta {
-  background: rgba(255,255,255,0.05);
-  border-left: 4px solid #00ff88;
-  padding: 28px;
-  margin-bottom: 25px;
-  border-radius: 0 15px 15px 0;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-}
-
-.pregunta h3 {
-  color: #00ff88;
-  font-size: 21px;
-  margin-top: 0;
-  margin-bottom: 18px;
-}
-
-.pregunta p {
-  color: #ddd;
-  line-height: 1.8;
-  font-size: 16px;
-  margin-bottom: 14px;
-}
-
-.pregunta strong {
-  color: white;
-}
-
-.final-entrevista {
-  text-align: center;
-  margin-top: 60px;
-  padding: 45px 20px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #00ff88, #087f4d);
-  color: #050505;
-}
-
-.final-entrevista .pregunta-final {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.final-entrevista h2 {
-  font-size: 38px;
-  margin: 15px 0;
-}
-
-.final-entrevista p:last-child {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-@media (max-width: 600px) {
-  .entrevista {
-    padding: 55px 15px;
-  }
-
-  .entrevista-titulo h2 {
-    font-size: 32px;
-  }
-
-  .pregunta {
-    padding: 22px;
-  }
-
-  .pregunta h3 {
-    font-size: 19px;
-  }
-
-  .pregunta p {
-    font-size: 15px;
-  }
-
-  .final-entrevista h2 {
-    font-size: 30px;
-  }
-}
-</style>
