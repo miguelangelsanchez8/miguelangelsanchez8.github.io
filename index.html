@@ -4,19 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Miguel Ángel Sánchez Dionisio | Futbolista</title>
+  <title>Miguel Ángel Sánchez Dionisio | Futbolista mexicano | Liga TDP</title>
 
-  <meta name="description" content="Miguel Ángel Sánchez Dionisio, futbolista mexicano. Volante por derecha o izquierda, número 8, perfil derecho. Conoce su historia, trayectoria, superación y sueños.">
+  <meta name="description" content="Miguel Ángel Sánchez Dionisio, futbolista mexicano nacido en Villa Cuauhtémoc, Centla, Tabasco. Volante por derecha o izquierda, perfil derecho y número 8. Conoce su historia, trayectoria, superación y sueños en el fútbol.">
+
+  <meta name="keywords" content="Miguel Ángel Sánchez Dionisio, Miguel Sanchez Dionisio, Miguel Ángel Sánchez futbolista, Miguel Sánchez futbolista, futbolista mexicano, futbolista Tabasco, futbolista de Centla, futbolista Villa Cuauhtémoc, Liga TDP, Alebrijes, volante número 8">
+
   <meta name="author" content="Miguel Ángel Sánchez Dionisio">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow, max-image-preview:large">
 
   <link rel="canonical" href="https://miguelangelsanchez8.github.io/">
 
-  <meta property="og:title" content="Miguel Ángel Sánchez Dionisio | Futbolista">
-  <meta property="og:description" content="Conoce la historia y trayectoria de Miguel Ángel Sánchez Dionisio, futbolista mexicano.">
+  <!-- GOOGLE / SEO -->
+
+  <meta name="theme-color" content="#080808">
+
+  <!-- OPEN GRAPH -->
+
+  <meta property="og:title" content="Miguel Ángel Sánchez Dionisio | Futbolista mexicano">
+  <meta property="og:description" content="Conoce la historia, trayectoria, superación y sueños de Miguel Ángel Sánchez Dionisio, futbolista mexicano de Liga TDP.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://miguelangelsanchez8.github.io/">
   <meta property="og:image" content="https://miguelangelsanchez8.github.io/miguel.jpg">
+  <meta property="og:image:alt" content="Miguel Ángel Sánchez Dionisio, futbolista mexicano">
+  <meta property="og:site_name" content="Miguel Ángel Sánchez Dionisio">
+
+  <!-- TWITTER / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Miguel Ángel Sánchez Dionisio | Futbolista">
+  <meta name="twitter:description" content="Conoce la historia y trayectoria de Miguel Ángel Sánchez Dionisio, futbolista mexicano.">
+  <meta name="twitter:image" content="https://miguelangelsanchez8.github.io/miguel.jpg">
+
+  <!-- DATOS ESTRUCTURADOS PARA GOOGLE -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Miguel Ángel Sánchez Dionisio",
+    "alternateName": [
+      "Miguel Sánchez Dionisio",
+      "Miguel Ángel Sánchez"
+    ],
+    "jobTitle": "Futbolista",
+    "description": "Miguel Ángel Sánchez Dionisio es un futbolista mexicano que juega como volante por derecha o izquierda, de perfil derecho y con el número 8.",
+    "birthDate": "2007-06-27",
+    "birthPlace": {
+      "@type": "Place",
+      "name": "Villa Cuauhtémoc, Centla, Tabasco, México"
+    },
+    "nationality": "Mexican",
+    "height": "1.62 m",
+    "url": "https://miguelangelsanchez8.github.io/",
+    "image": "https://miguelangelsanchez8.github.io/miguel.jpg",
+    "sport": "Fútbol",
+    "memberOf": {
+      "@type": "SportsTeam",
+      "name": "Alebrijes"
+    }
+  }
+  </script>
+
 
   <style>
 
@@ -315,6 +365,72 @@
     }
 
     /* =========================
+       POR QUÉ JUEGO
+    ========================= */
+
+    .porque {
+      margin-top: 25px;
+    }
+
+    .porque details {
+      background: linear-gradient(145deg, #111, #181818);
+      border: 1px solid #292929;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .porque details[open] {
+      border-color: #ff6a00;
+      box-shadow: 0 0 25px rgba(255,106,0,.12);
+    }
+
+    .porque summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 25px;
+      font-size: 21px;
+      font-weight: bold;
+      position: relative;
+      padding-right: 60px;
+    }
+
+    .porque summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .porque summary::after {
+      content: "+";
+      position: absolute;
+      right: 25px;
+      top: 18px;
+      color: #ff6a00;
+      font-size: 30px;
+    }
+
+    .porque details[open] summary::after {
+      content: "−";
+    }
+
+    .porque-subtitulo {
+      display: block;
+      color: #888;
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 4px;
+    }
+
+    .porque-contenido {
+      padding: 0 25px 25px;
+      border-top: 1px solid #292929;
+      padding-top: 22px;
+    }
+
+    .porque-contenido p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* =========================
        COMPARTIR
     ========================= */
 
@@ -482,6 +598,16 @@
         width: 100%;
       }
 
+      .porque summary {
+        padding: 20px;
+        padding-right: 55px;
+      }
+
+      .porque-contenido {
+        padding: 0 20px 20px;
+        padding-top: 20px;
+      }
+
       #arriba {
         right: 15px;
         bottom: 15px;
@@ -527,6 +653,7 @@
   <a href="#historia">Historia</a>
   <a href="#lobos">Lobos</a>
   <a href="#superacion">Superación</a>
+  <a href="#porque">¿Por qué juego?</a>
   <a href="#entrevista">Entrevista</a>
   <a href="#personas">Personas</a>
   <a href="#compartir">Compartir</a>
@@ -727,6 +854,77 @@
       que sigo aquí, persiguiendo el mismo sueño que comenzó cuando
       era niño.
     </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     POR QUÉ JUEGO
+========================= -->
+
+<section id="porque">
+
+  <h2>🧡 ¿Por qué juego?</h2>
+
+  <p style="text-align:center;">
+    Toca para conocer la historia detrás de mi pasión por el fútbol.
+  </p>
+
+  <div class="porque">
+
+    <details>
+
+      <summary>
+        ⚽ La historia detrás de mi pasión
+        <span class="porque-subtitulo">
+          Desde jugar descalzo en la calle hasta perseguir un sueño
+        </span>
+      </summary>
+
+      <div class="porque-contenido">
+
+        <p>
+          Juego porque el fútbol forma parte de mí desde que era niño.
+        </p>
+
+        <p>
+          Empecé jugando descalzo en la calle con mis amigos, sin
+          pensar en equipos, competencias ni en llegar a ser profesional.
+          Solamente quería jugar, correr detrás de una pelota y disfrutar
+          cada momento.
+        </p>
+
+        <p>
+          Había días en los que ni siquiera necesitaba salir de casa.
+          Me ponía a jugar yo solo en la sala, imaginando partidos y
+          haciendo de cuenta que estaba en una cancha de verdad.
+          Desde entonces, aunque todavía no sabía hasta dónde podía
+          llegar, el fútbol ya era una parte importante de mi vida.
+        </p>
+
+        <p>
+          Con el paso de los años, ese juego de niño se convirtió en
+          un sueño. Un sueño que ha tenido obstáculos, momentos difíciles
+          y muchas veces me ha obligado a empezar de nuevo.
+        </p>
+
+        <p>
+          Pero cada vez que entro a una cancha recuerdo a aquel niño
+          que jugaba descalzo en la calle con sus amigos y al que le
+          bastaba una pelota para ser feliz.
+        </p>
+
+        <p>
+          Juego por ese niño. Por mi familia. Por quienes han creído
+          en mí. Y por el sueño que empezó en una calle y que todavía
+          quiero llevar mucho más lejos. ⚽🧡
+        </p>
+
+      </div>
+
+    </details>
 
   </div>
 
@@ -1264,4 +1462,4 @@
 </script>
 
 </body>
-  </html>
+        </html>
