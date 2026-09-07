@@ -16,8 +16,6 @@
 
   <link rel="canonical" href="https://miguelangelsanchez8.github.io/">
 
-  <!-- GOOGLE / SEO -->
-
   <meta name="theme-color" content="#080808">
 
   <!-- OPEN GRAPH -->
@@ -67,6 +65,28 @@
   }
   </script>
 
+  <!-- ==================================================
+       GOOGLE ANALYTICS
+       AQUÍ PONDRÁS TU ID CUANDO LO TENGAS.
+       EJEMPLO: G-XXXXXXXXXX
+  =================================================== -->
+
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
 
   <style>
 
@@ -88,6 +108,7 @@
       overflow-x: hidden;
     }
 
+
     /* =========================
        PORTADA
     ========================= */
@@ -107,6 +128,7 @@
 
     .hero {
       max-width: 900px;
+      animation: aparecer 1.3s ease;
     }
 
     .hero img {
@@ -138,6 +160,7 @@
       margin: 10px 0;
     }
 
+
     /* =========================
        NAVEGACIÓN
     ========================= */
@@ -166,6 +189,7 @@
       color: #ff6a00;
     }
 
+
     /* =========================
        SECCIONES
     ========================= */
@@ -188,6 +212,7 @@
       font-size: 17px;
       margin-bottom: 15px;
     }
+
 
     /* =========================
        PERFIL
@@ -225,6 +250,7 @@
       font-weight: bold;
     }
 
+
     /* =========================
        TARJETAS
     ========================= */
@@ -236,6 +262,7 @@
       padding: 25px;
       margin-top: 20px;
     }
+
 
     /* =========================
        GALERÍA
@@ -263,8 +290,9 @@
       border-color: #ff6a00;
     }
 
+
     /* =========================
-       ENTREVISTA DESPLEGABLE
+       ENTREVISTA
     ========================= */
 
     .entrevista details {
@@ -307,6 +335,7 @@
       padding: 0 20px 20px;
       color: #ccc;
     }
+
 
     /* =========================
        PERSONAS ESPECIALES
@@ -363,6 +392,7 @@
     .persona.activa .persona-contenido {
       display: block;
     }
+
 
     /* =========================
        POR QUÉ JUEGO
@@ -430,6 +460,132 @@
       margin-bottom: 0;
     }
 
+
+    /* =================================================
+       EL NIÑO QUE NO DEJÓ DE SOÑAR
+    ================================================= */
+
+    .sueño-historia {
+      background:
+        radial-gradient(circle at center, rgba(255,106,0,.12), transparent 55%),
+        #0b0b0b;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      max-width: none;
+      padding: 100px 20px;
+    }
+
+    .historia-interactiva {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .historia-etapa {
+      display: none;
+      animation: etapaEntrar .7s ease;
+    }
+
+    .historia-etapa.activa {
+      display: block;
+    }
+
+    .historia-numero {
+      font-size: 75px;
+      font-weight: bold;
+      color: #ff6a00;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .historia-etapa h3 {
+      font-size: clamp(28px, 6vw, 48px);
+      margin-bottom: 20px;
+    }
+
+    .historia-etapa p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+      color: #ccc;
+      font-size: 18px;
+    }
+
+    .historia-boton {
+      margin-top: 20px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      background: #ff6a00;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .historia-boton:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,106,0,.35);
+    }
+
+    .historia-puntos {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 35px;
+    }
+
+    .historia-punto {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #333;
+      transition: .3s;
+    }
+
+    .historia-punto.activo {
+      background: #ff6a00;
+      transform: scale(1.4);
+    }
+
+    .historia-final {
+      font-size: clamp(38px, 8vw, 70px);
+      color: #ff6a00;
+      font-weight: bold;
+      line-height: 1.1;
+    }
+
+
+    /* =========================
+       NARRADOR
+    ========================= */
+
+    .narrador {
+      margin-top: 35px;
+      text-align: center;
+    }
+
+    .boton-narrador {
+      background: #161616;
+      color: white;
+      border: 1px solid #ff6a00;
+      border-radius: 30px;
+      padding: 14px 25px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .boton-narrador:hover {
+      background: #ff6a00;
+    }
+
+    .boton-narrador.leyendo {
+      background: #ff6a00;
+    }
+
+
     /* =========================
        COMPARTIR
     ========================= */
@@ -466,8 +622,9 @@
       background: #ff6a00;
     }
 
+
     /* =========================
-       SUEÑO
+       SUEÑO FINAL
     ========================= */
 
     .sueño {
@@ -483,6 +640,7 @@
     .sueño p {
       font-size: 25px;
     }
+
 
     /* =========================
        BOTÓN ARRIBA
@@ -510,8 +668,9 @@
       display: block;
     }
 
+
     /* =========================
-       MODAL DE FOTOS
+       MODAL
     ========================= */
 
     #modalFoto {
@@ -540,12 +699,43 @@
       cursor: pointer;
     }
 
+
     footer {
       text-align: center;
       padding: 30px;
       border-top: 1px solid #222;
       color: #777;
     }
+
+
+    /* =========================
+       ANIMACIONES
+    ========================= */
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes etapaEntrar {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
 
     /* =========================
        CELULAR
@@ -608,6 +798,18 @@
         padding-top: 20px;
       }
 
+      .historia-numero {
+        font-size: 60px;
+      }
+
+      .historia-etapa p {
+        font-size: 16px;
+      }
+
+      .historia-boton {
+        width: 100%;
+      }
+
       #arriba {
         right: 15px;
         bottom: 15px;
@@ -618,6 +820,7 @@
 </head>
 
 <body>
+
 
 <!-- =========================
      PORTADA
@@ -654,6 +857,7 @@
   <a href="#lobos">Lobos</a>
   <a href="#superacion">Superación</a>
   <a href="#porque">¿Por qué juego?</a>
+  <a href="#nino">El niño que soñó</a>
   <a href="#entrevista">Entrevista</a>
   <a href="#personas">Personas</a>
   <a href="#compartir">Compartir</a>
@@ -931,6 +1135,206 @@
 </section>
 
 
+<!-- ==================================================
+     EL NIÑO QUE NO DEJÓ DE SOÑAR
+=================================================== -->
+
+<section id="nino" class="sueño-historia">
+
+  <div class="historia-interactiva">
+
+    <h2>👦⚽ El niño que no dejó de soñar</h2>
+
+    <p style="text-align:center;">
+      Hay historias que comienzan con una pelota y terminan convirtiéndose
+      en un sueño que nunca deja de crecer.
+    </p>
+
+
+    <!-- ETAPA 1 -->
+
+    <div class="historia-etapa activa">
+
+      <div class="historia-numero">01</div>
+
+      <h3>Todo comenzó con un niño</h3>
+
+      <p>
+        Desde los 6 años, el fútbol comenzó a formar parte de mi vida.
+        En las calles de Villa Cuauhtémoc nació algo que todavía sigue
+        conmigo: el sueño de llegar más lejos.
+      </p>
+
+      <button class="historia-boton" onclick="siguienteEtapa()">
+        Continuar →
+      </button>
+
+    </div>
+
+
+    <!-- ETAPA 2 -->
+
+    <div class="historia-etapa">
+
+      <div class="historia-numero">02</div>
+
+      <h3>Una pelota era suficiente</h3>
+
+      <p>
+        No necesitaba grandes estadios ni uniformes para disfrutar
+        del fútbol. Bastaba una pelota, mis amigos y las ganas de jugar.
+      </p>
+
+      <button class="historia-boton" onclick="siguienteEtapa()">
+        Continuar →
+      </button>
+
+    </div>
+
+
+    <!-- ETAPA 3 -->
+
+    <div class="historia-etapa">
+
+      <div class="historia-numero">03</div>
+
+      <h3>El sueño empezó a crecer</h3>
+
+      <p>
+        Con el tiempo entendí que aquello que comenzó como un juego
+        podía convertirse en algo mucho más grande. Empecé a buscar
+        oportunidades y a luchar por demostrar lo que podía hacer.
+      </p>
+
+      <button class="historia-boton" onclick="siguienteEtapa()">
+        Continuar →
+      </button>
+
+    </div>
+
+
+    <!-- ETAPA 4 -->
+
+    <div class="historia-etapa">
+
+      <div class="historia-numero">04</div>
+
+      <h3>El camino no fue fácil</h3>
+
+      <p>
+        Llegaron sacrificios, trabajo, obstáculos y momentos en los
+        que continuar parecía más difícil. Pero dejar de soñar nunca
+        fue una opción.
+      </p>
+
+      <button class="historia-boton" onclick="siguienteEtapa()">
+        Continuar →
+      </button>
+
+    </div>
+
+
+    <!-- ETAPA 5 -->
+
+    <div class="historia-etapa">
+
+      <div class="historia-numero">05</div>
+
+      <h3>Caer también fue parte del camino</h3>
+
+      <p>
+        Las lesiones me alejaron de las canchas y me obligaron a
+        empezar de nuevo. Pero cada regreso me hizo recordar por
+        qué había comenzado.
+      </p>
+
+      <button class="historia-boton" onclick="siguienteEtapa()">
+        Continuar →
+      </button>
+
+    </div>
+
+
+    <!-- ETAPA 6 -->
+
+    <div class="historia-etapa">
+
+      <div class="historia-numero">06</div>
+
+      <h3>Volver a pisar una cancha</h3>
+
+      <p>
+        Después de los momentos difíciles, volver a jugar tuvo un
+        significado diferente. Ya no era solamente jugar fútbol.
+        Era demostrarme que todavía podía seguir adelante.
+      </p>
+
+      <button class="historia-boton" onclick="siguienteEtapa()">
+        Continuar →
+      </button>
+
+    </div>
+
+
+    <!-- ETAPA 7 -->
+
+    <div class="historia-etapa">
+
+      <div class="historia-numero">07</div>
+
+      <h3>Hoy soy el #8</h3>
+
+      <p>
+        El niño que comenzó jugando en las calles ahora sigue
+        persiguiendo el mismo sueño dentro de una cancha.
+      </p>
+
+      <button class="historia-boton" onclick="siguienteEtapa()">
+        Continuar →
+      </button>
+
+    </div>
+
+
+    <!-- ETAPA FINAL -->
+
+    <div class="historia-etapa">
+
+      <div class="historia-numero">08</div>
+
+      <div class="historia-final">
+        El sueño continúa.
+      </div>
+
+      <p style="margin-top:25px;">
+        La historia todavía no termina.
+      </p>
+
+      <button class="historia-boton" onclick="reiniciarHistoria()">
+        ↻ Volver a vivir la historia
+      </button>
+
+    </div>
+
+
+    <div class="historia-puntos">
+
+      <div class="historia-punto activo"></div>
+      <div class="historia-punto"></div>
+      <div class="historia-punto"></div>
+      <div class="historia-punto"></div>
+      <div class="historia-punto"></div>
+      <div class="historia-punto"></div>
+      <div class="historia-punto"></div>
+      <div class="historia-punto"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 <!-- =========================
      ENTREVISTA
 ========================= -->
@@ -1033,6 +1437,21 @@
         cosas no salen bien.
       </div>
     </details>
+
+  </div>
+
+
+  <!-- NARRADOR -->
+
+  <div class="narrador">
+
+    <button id="botonNarrador"
+            class="boton-narrador"
+            onclick="narrarHistoria()">
+
+      🎙️ Escuchar mi historia
+
+    </button>
 
   </div>
 
@@ -1335,7 +1754,10 @@
 
 <script>
 
-  /* PERSONAS */
+
+  /* =========================
+     PERSONAS
+  ========================= */
 
   function togglePersona(button) {
 
@@ -1346,7 +1768,9 @@
   }
 
 
-  /* FOTO GRANDE */
+  /* =========================
+     FOTO GRANDE
+  ========================= */
 
   function abrirFoto(src) {
 
@@ -1364,7 +1788,9 @@
   }
 
 
-  /* BOTÓN ARRIBA */
+  /* =========================
+     BOTÓN ARRIBA
+  ========================= */
 
   window.addEventListener("scroll", function() {
 
@@ -1393,7 +1819,9 @@
   }
 
 
-  /* COMPARTIR */
+  /* =========================
+     COMPARTIR
+  ========================= */
 
   async function compartirPagina() {
 
@@ -1426,7 +1854,9 @@
   }
 
 
-  /* COPIAR ENLACE */
+  /* =========================
+     COPIAR ENLACE
+  ========================= */
 
   function copiarEnlace() {
 
@@ -1447,7 +1877,188 @@
   }
 
 
-  /* CERRAR FOTO CON ESC */
+  /* =================================================
+     HISTORIA INTERACTIVA
+  ================================================= */
+
+  let etapaActual = 0;
+
+  const etapas = document.querySelectorAll(".historia-etapa");
+
+  const puntos = document.querySelectorAll(".historia-punto");
+
+
+  function mostrarEtapa(numero) {
+
+    etapas.forEach(function(etapa, indice) {
+
+      etapa.classList.remove("activa");
+
+      if (indice === numero) {
+
+        etapa.classList.add("activa");
+
+      }
+
+    });
+
+
+    puntos.forEach(function(punto, indice) {
+
+      punto.classList.remove("activo");
+
+      if (indice === numero) {
+
+        punto.classList.add("activo");
+
+      }
+
+    });
+
+  }
+
+
+  function siguienteEtapa() {
+
+    if (etapaActual < etapas.length - 1) {
+
+      etapaActual++;
+
+      mostrarEtapa(etapaActual);
+
+    }
+
+  }
+
+
+  function reiniciarHistoria() {
+
+    etapaActual = 0;
+
+    mostrarEtapa(etapaActual);
+
+  }
+
+
+  /* =========================
+     NARRADOR
+  ========================= */
+
+  function narrarHistoria() {
+
+    const boton = document.getElementById("botonNarrador");
+
+
+    if (!("speechSynthesis" in window)) {
+
+      alert("Tu navegador no permite reproducir el narrador.");
+
+      return;
+
+    }
+
+
+    if (speechSynthesis.speaking) {
+
+      speechSynthesis.cancel();
+
+      boton.textContent = "🎙️ Escuchar mi historia";
+
+      boton.classList.remove("leyendo");
+
+      return;
+
+    }
+
+
+    const texto = `
+
+      Mi historia con el fútbol comenzó desde muy pequeño.
+
+      Desde los 6 años empecé a jugar en las calles de Villa Cuauhtémoc,
+      donde nació el sueño de algún día poder dedicarme al fútbol.
+
+      Con el paso de los años fui buscando oportunidades para demostrar
+      lo que podía hacer.
+
+      Una de las personas y equipos que me ayudaron en ese camino fueron
+      los Deportivos Lobos de Zaragoza, un equipo del barrio que creyó
+      en mí y me apoyó económicamente para poder asistir a pruebas y
+      seguir buscando oportunidades.
+
+      También tuve que aprender desde muy joven lo que significa esforzarse.
+      Comencé a trabajar desde los 12 años mientras continuaba persiguiendo
+      mi sueño dentro del fútbol.
+
+      Después de diferentes experiencias y oportunidades, mi camino me
+      llevó hasta Alebrijes, donde pude continuar creciendo como futbolista
+      y acercarme cada vez más al sueño que comenzó jugando en las calles
+      de mi pueblo.
+
+      El camino no siempre ha sido fácil.
+
+      Tuve momentos difíciles, obstáculos y lesiones que me alejaron
+      de las canchas.
+
+      Pero cada regreso me recordó por qué había comenzado.
+
+      Hoy sigo aquí.
+
+      Soy Miguel Ángel Sánchez Dionisio.
+
+      Soy el número 8.
+
+      Y el sueño continúa.
+
+    `;
+
+
+    const voz = new SpeechSynthesisUtterance(texto);
+
+    voz.lang = "es-MX";
+
+    voz.rate = 0.92;
+
+    voz.pitch = 1;
+
+    voz.volume = 1;
+
+
+    voz.onstart = function() {
+
+      boton.textContent = "⏹️ Detener narrador";
+
+      boton.classList.add("leyendo");
+
+    };
+
+
+    voz.onend = function() {
+
+      boton.textContent = "🎙️ Escuchar mi historia";
+
+      boton.classList.remove("leyendo");
+
+    };
+
+
+    voz.onerror = function() {
+
+      boton.textContent = "🎙️ Escuchar mi historia";
+
+      boton.classList.remove("leyendo");
+
+    };
+
+
+    speechSynthesis.speak(voz);
+
+  }
+
+
+  /* =========================
+     CERRAR FOTO CON ESC
+  ========================= */
 
   document.addEventListener("keydown", function(event) {
 
@@ -1462,4 +2073,4 @@
 </script>
 
 </body>
-        </html>
+  </html>
