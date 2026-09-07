@@ -6,37 +6,20 @@
 
   <title>Miguel Ángel Sánchez Dionisio | Futbolista</title>
 
-  <meta name="description" content="Miguel Ángel Sánchez Dionisio, futbolista mexicano nacido el 27 de junio de 2007. Volante por derecha o izquierda, número 8, perfil derecho. Su historia, trayectoria, superación y sueño de llegar más lejos en el fútbol.">
+  <meta name="description" content="Miguel Ángel Sánchez Dionisio, futbolista mexicano. Volante por derecha o izquierda, número 8, perfil derecho. Conoce su historia, trayectoria, superación y sueños.">
   <meta name="author" content="Miguel Ángel Sánchez Dionisio">
   <meta name="robots" content="index, follow">
-  <meta name="googlebot" content="index, follow">
 
   <link rel="canonical" href="https://miguelangelsanchez8.github.io/">
 
   <meta property="og:title" content="Miguel Ángel Sánchez Dionisio | Futbolista">
-  <meta property="og:description" content="Conoce la historia, trayectoria y sueños de Miguel Ángel Sánchez Dionisio, futbolista mexicano.">
+  <meta property="og:description" content="Conoce la historia y trayectoria de Miguel Ángel Sánchez Dionisio, futbolista mexicano.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://miguelangelsanchez8.github.io/">
   <meta property="og:image" content="https://miguelangelsanchez8.github.io/miguel.jpg">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Miguel Ángel Sánchez Dionisio",
-    "jobTitle": "Futbolista",
-    "birthDate": "2007-06-27",
-    "birthPlace": {
-      "@type": "Place",
-      "name": "Villa Cuauhtémoc, Centla, Tabasco, México"
-    },
-    "image": "https://miguelangelsanchez8.github.io/miguel.jpg",
-    "url": "https://miguelangelsanchez8.github.io/",
-    "description": "Futbolista mexicano que juega como volante por derecha o izquierda y utiliza el número 8."
-  }
-  </script>
-
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -50,9 +33,14 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #080808;
-      color: #ffffff;
+      color: white;
       line-height: 1.7;
+      overflow-x: hidden;
     }
+
+    /* =========================
+       PORTADA
+    ========================= */
 
     header {
       min-height: 100vh;
@@ -61,8 +49,9 @@
       align-items: center;
       text-align: center;
       padding: 30px 20px;
+
       background:
-        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.92)),
+        linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.94)),
         url("miguel.jpg") center/cover;
     }
 
@@ -71,121 +60,140 @@
     }
 
     .hero img {
-      width: 190px;
-      height: 190px;
+      width: 185px;
+      height: 185px;
       object-fit: cover;
       border-radius: 50%;
       border: 5px solid #ff6a00;
       margin-bottom: 25px;
-      box-shadow: 0 0 35px rgba(255,106,0,.35);
+      box-shadow: 0 0 35px rgba(255,106,0,.4);
     }
 
     h1 {
-      font-size: clamp(35px, 7vw, 70px);
+      font-size: clamp(35px, 8vw, 70px);
       line-height: 1.1;
       margin-bottom: 15px;
     }
 
     .hero p {
-      font-size: 22px;
-      color: #ff7b18;
+      color: #ff7518;
+      font-size: 21px;
       font-weight: bold;
     }
 
     .numero {
-      display: inline-block;
-      margin-top: 20px;
-      font-size: 55px;
+      font-size: 65px;
       font-weight: bold;
       color: #ff6a00;
+      margin: 10px 0;
     }
+
+    /* =========================
+       NAVEGACIÓN
+    ========================= */
 
     nav {
       position: sticky;
       top: 0;
-      z-index: 1000;
-      background: rgba(8,8,8,.96);
-      border-bottom: 1px solid #252525;
-      text-align: center;
+      z-index: 999;
+      background: rgba(8,8,8,.97);
+      border-bottom: 1px solid #292929;
       padding: 14px 8px;
+      text-align: center;
+      overflow-x: auto;
+      white-space: nowrap;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 8px;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: bold;
+      margin: 0 7px;
     }
 
     nav a:hover {
       color: #ff6a00;
     }
 
+    /* =========================
+       SECCIONES
+    ========================= */
+
     section {
       max-width: 1000px;
       margin: auto;
-      padding: 80px 22px;
+      padding: 75px 22px;
     }
 
     section h2 {
       color: #ff6a00;
-      font-size: 35px;
-      margin-bottom: 25px;
+      font-size: 36px;
       text-align: center;
-    }
-
-    section h3 {
-      color: #ff7b18;
-      font-size: 24px;
-      margin: 30px 0 12px;
+      margin-bottom: 30px;
     }
 
     section p {
-      color: #dddddd;
+      color: #ddd;
       font-size: 17px;
       margin-bottom: 15px;
     }
 
+    /* =========================
+       PERFIL
+    ========================= */
+
     .perfil {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 15px;
-      margin-top: 30px;
     }
 
     .dato {
-      background: #111111;
+      background: #111;
       border: 1px solid #292929;
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 20px;
       text-align: center;
+      transition: .3s;
+    }
+
+    .dato:hover {
+      transform: translateY(-5px);
+      border-color: #ff6a00;
     }
 
     .dato strong {
       display: block;
       color: #ff6a00;
-      font-size: 14px;
-      margin-bottom: 5px;
+      font-size: 13px;
       text-transform: uppercase;
     }
 
     .dato span {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: bold;
     }
+
+    /* =========================
+       TARJETAS
+    ========================= */
 
     .card {
       background: #101010;
       border-left: 4px solid #ff6a00;
-      border-radius: 10px;
+      border-radius: 12px;
       padding: 25px;
-      margin-top: 25px;
+      margin-top: 20px;
     }
+
+    /* =========================
+       GALERÍA
+    ========================= */
 
     .galeria {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 18px;
       margin-top: 30px;
     }
@@ -194,82 +202,260 @@
       width: 100%;
       height: 330px;
       object-fit: cover;
-      border-radius: 12px;
+      border-radius: 14px;
       border: 2px solid #292929;
+      cursor: pointer;
+      transition: .3s;
     }
 
-    .entrevista {
-      margin-top: 20px;
+    .galeria img:hover {
+      transform: scale(1.02);
+      border-color: #ff6a00;
     }
 
-    .pregunta {
-      color: #ff6a00;
+    /* =========================
+       ENTREVISTA DESPLEGABLE
+    ========================= */
+
+    .entrevista details {
+      background: #111;
+      border: 1px solid #292929;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    .entrevista summary {
+      cursor: pointer;
+      padding: 20px;
+      font-size: 18px;
       font-weight: bold;
-      font-size: 20px;
-      margin-top: 28px;
-      margin-bottom: 8px;
+      color: white;
+      list-style: none;
+      position: relative;
+      padding-right: 50px;
+    }
+
+    .entrevista summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .entrevista summary::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      color: #ff6a00;
+      font-size: 25px;
+      top: 15px;
+    }
+
+    .entrevista details[open] summary::after {
+      content: "−";
     }
 
     .respuesta {
-      color: #dddddd;
+      padding: 0 20px 20px;
+      color: #ccc;
     }
 
-    .agradecimientos {
+    /* =========================
+       PERSONAS ESPECIALES
+    ========================= */
+
+    .personas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .persona {
+      background: #111;
+      border: 1px solid #292929;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .persona button {
+      width: 100%;
+      background: none;
+      border: none;
+      color: white;
+      padding: 23px;
+      text-align: left;
+      font-size: 19px;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .persona button::after {
+      content: "+";
+      position: absolute;
+      right: 22px;
+      color: #ff6a00;
+      font-size: 25px;
+    }
+
+    .persona.activa button::after {
+      content: "−";
+    }
+
+    .persona-contenido {
+      display: none;
+      padding: 0 23px 23px;
+      color: #ccc;
+    }
+
+    .persona.activa {
+      border-color: #ff6a00;
+    }
+
+    .persona.activa .persona-contenido {
+      display: block;
+    }
+
+    /* =========================
+       COMPARTIR
+    ========================= */
+
+    .compartir {
       text-align: center;
+      padding: 60px 20px;
+      background: #0e0e0e;
     }
 
-    .agradecimientos p {
-      max-width: 800px;
-      margin: 0 auto 18px;
+    .botones-compartir {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
     }
+
+    .boton-compartir {
+      border: none;
+      border-radius: 10px;
+      padding: 14px 20px;
+      color: white;
+      background: #202020;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: .25s;
+    }
+
+    .boton-compartir:hover {
+      transform: translateY(-3px);
+      background: #ff6a00;
+    }
+
+    /* =========================
+       SUEÑO
+    ========================= */
 
     .sueño {
       text-align: center;
-      padding: 90px 20px;
-      background: linear-gradient(180deg, #080808, #151515);
+      padding: 100px 20px;
+      background: linear-gradient(#080808, #151515);
     }
 
     .sueño h2 {
-      font-size: clamp(35px, 6vw, 60px);
-      margin-bottom: 15px;
+      font-size: clamp(38px, 7vw, 65px);
     }
 
     .sueño p {
-      font-size: 24px;
-      color: #ffffff;
+      font-size: 25px;
+    }
+
+    /* =========================
+       BOTÓN ARRIBA
+    ========================= */
+
+    #arriba {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      background: #ff6a00;
+      color: white;
+      font-size: 23px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1000;
+      display: none;
+      box-shadow: 0 5px 20px rgba(0,0,0,.5);
+    }
+
+    #arriba.visible {
+      display: block;
+    }
+
+    /* =========================
+       MODAL DE FOTOS
+    ========================= */
+
+    #modalFoto {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.93);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    #modalFoto img {
+      max-width: 95%;
+      max-height: 90vh;
+      border-radius: 12px;
+    }
+
+    #cerrarFoto {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
+      padding: 30px;
       border-top: 1px solid #222;
       color: #777;
-      font-size: 14px;
     }
 
-    .destacado {
-      color: #ff6a00;
-      font-weight: bold;
-    }
+    /* =========================
+       CELULAR
+    ========================= */
 
     @media (max-width: 600px) {
-      nav {
-        overflow-x: auto;
-        white-space: nowrap;
-      }
 
-      nav a {
-        font-size: 12px;
-        margin: 0 5px;
-      }
-
-      section {
-        padding: 60px 18px;
+      header {
+        min-height: 90vh;
       }
 
       .hero img {
-        width: 155px;
-        height: 155px;
+        width: 150px;
+        height: 150px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .numero {
+        font-size: 55px;
+      }
+
+      section {
+        padding: 55px 17px;
       }
 
       section h2 {
@@ -279,445 +465,803 @@
       section p {
         font-size: 16px;
       }
+
+      .personas {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .galeria img {
+        height: 300px;
+      }
+
+      .boton-compartir {
+        width: 100%;
+      }
+
+      #arriba {
+        right: 15px;
+        bottom: 15px;
+      }
     }
+
   </style>
 </head>
 
 <body>
 
-  <header>
-    <div class="hero">
-      <img src="miguel.jpg" alt="Miguel Ángel Sánchez Dionisio, futbolista">
-      <h1>Miguel Ángel Sánchez Dionisio</h1>
-      <p>Futbolista mexicano</p>
-      <div class="numero">#8</div>
-      <p>Volante por derecha o izquierda · Perfil derecho</p>
-    </div>
-  </header>
+<!-- =========================
+     PORTADA
+========================= -->
 
-  <nav>
-    <a href="#perfil">Perfil</a>
-    <a href="#historia">Historia</a>
-    <a href="#lobos">Lobos</a>
-    <a href="#superacion">Superación</a>
-    <a href="#entrevista">Entrevista</a>
-    <a href="#personas">Personas</a>
-  </nav>
+<header id="inicio">
 
-  <section id="perfil">
-    <h2>Perfil futbolístico</h2>
+  <div class="hero">
 
-    <div class="perfil">
+    <img src="miguel.jpg"
+         alt="Miguel Ángel Sánchez Dionisio">
 
-      <div class="dato">
-        <strong>Nombre</strong>
-        <span>Miguel Ángel Sánchez Dionisio</span>
-      </div>
+    <h1>Miguel Ángel Sánchez Dionisio</h1>
 
-      <div class="dato">
-        <strong>Fecha de nacimiento</strong>
-        <span>27/06/2007</span>
-      </div>
+    <p>Futbolista mexicano</p>
 
-      <div class="dato">
-        <strong>Origen</strong>
-        <span>Villa Cuauhtémoc, Centla, Tabasco</span>
-      </div>
+    <div class="numero">#8</div>
 
-      <div class="dato">
-        <strong>Posición</strong>
-        <span>Volante por derecha o izquierda</span>
-      </div>
+    <p>Volante por derecha o izquierda · Perfil derecho</p>
 
-      <div class="dato">
-        <strong>Perfil</strong>
-        <span>Derecho</span>
-      </div>
+  </div>
 
-      <div class="dato">
-        <strong>Número</strong>
-        <span>#8</span>
-      </div>
+</header>
 
-      <div class="dato">
-        <strong>Estatura</strong>
-        <span>1.62 m</span>
-      </div>
 
-      <div class="dato">
-        <strong>Club</strong>
-        <span>Alebrijes</span>
-      </div>
+<!-- =========================
+     MENÚ
+========================= -->
 
-      <div class="dato">
-        <strong>Competición</strong>
-        <span>Liga TDP</span>
-      </div>
+<nav>
 
-      <div class="dato">
-        <strong>Temporada</strong>
-        <span>2026-2027</span>
-      </div>
+  <a href="#perfil">Perfil</a>
+  <a href="#historia">Historia</a>
+  <a href="#lobos">Lobos</a>
+  <a href="#superacion">Superación</a>
+  <a href="#entrevista">Entrevista</a>
+  <a href="#personas">Personas</a>
+  <a href="#compartir">Compartir</a>
 
-    </div>
-  </section>
+</nav>
 
-  <section id="historia">
-    <h2>Mi historia</h2>
 
-    <div class="card">
-      <p>
-        Mi historia con el fútbol comenzó desde muy pequeño. Desde los 6 años
-        empecé a jugar en las calles de Villa Cuauhtémoc, donde nació el sueño
-        de algún día poder dedicarme al fútbol.
-      </p>
+<!-- =========================
+     PERFIL
+========================= -->
 
-      <p>
-        Con el paso de los años fui buscando oportunidades para demostrar lo
-        que podía hacer. Una de las personas y equipos que me ayudaron en ese
-        camino fueron los <span class="destacado">Deportivos Lobos de Zaragoza</span>,
-        un equipo del barrio que creyó en mí y me apoyó incluso económicamente
-        para poder asistir a pruebas y seguir buscando oportunidades.
-      </p>
+<section id="perfil">
 
-      <p>
-        También tuve que aprender desde muy joven lo que significa esforzarse.
-        Comencé a trabajar desde los 12 años mientras continuaba persiguiendo
-        mi sueño dentro del fútbol.
-      </p>
+  <h2>Perfil futbolístico</h2>
 
-      <p>
-        Después de diferentes experiencias y oportunidades, mi camino me llevó
-        hasta <span class="destacado">Alebrijes</span>, donde pude continuar
-        creciendo como futbolista y acercarme cada vez más al sueño que comenzó
-        jugando en las calles de mi pueblo.
-      </p>
-    </div>
-  </section>
+  <div class="perfil">
 
-  <section id="lobos">
-    <h2>Deportivos Lobos de Zaragoza</h2>
-
-    <div class="card">
-      <p>
-        Lobos de Zaragoza fue un equipo del barrio que me dio una oportunidad
-        cuando más la necesitaba. No fue solamente un equipo para mí, también
-        fue parte importante del camino que me permitió seguir buscando mi
-        sueño.
-      </p>
-
-      <p>
-        Recuerdo con agradecimiento el apoyo que recibí para poder asistir a
-        pruebas y continuar intentando llegar más lejos en el fútbol.
-      </p>
+    <div class="dato">
+      <strong>Nombre</strong>
+      <span>Miguel Ángel Sánchez Dionisio</span>
     </div>
 
-    <div class="galeria">
-      <img src="IMG-20240616-WA0050.jpg" alt="Miguel Ángel Sánchez Dionisio con Lobos de Zaragoza">
-      <img src="IMG-20240616-WA0057.jpg" alt="Miguel Ángel Sánchez Dionisio jugando con Lobos de Zaragoza">
-    </div>
-  </section>
-
-  <section id="superacion">
-    <h2>Superación</h2>
-
-    <div class="card">
-      <p>
-        El camino no siempre ha sido fácil. Uno de los momentos más complicados
-        de mi carrera llegó cuando sufrí <span class="destacado">dos fisuras en
-        el tobillo izquierdo</span>, situación que me mantuvo aproximadamente
-        ocho meses alejado del fútbol profesional.
-      </p>
-
-      <p>
-        Fueron meses difíciles tanto física como emocionalmente. Estar lejos de
-        una cancha, de los entrenamientos y de aquello que más me gusta hacer
-        fue un proceso complicado. Hubo momentos de frustración y de dudas,
-        pero decidí seguir trabajando para volver.
-      </p>
-
-      <p>
-        Cuando finalmente pude regresar, tuve que volver a enfrentar otro
-        obstáculo. Hace aproximadamente un mes sufrí una
-        <span class="destacado">distensión del ligamento colateral de la
-        rodilla derecha</span>.
-      </p>
-
-      <p>
-        Cada lesión me ha enseñado que regresar no significa solamente volver
-        físicamente. También significa recuperar la confianza, tener paciencia
-        y seguir creyendo cuando parece que el camino se hace más largo.
-      </p>
-
-      <p>
-        Hoy puedo decir que he superado cada uno de esos obstáculos y que sigo
-        aquí, persiguiendo el mismo sueño que comenzó cuando era niño.
-      </p>
-    </div>
-  </section>
-
-  <section id="entrevista">
-    <h2>Entrevista</h2>
-
-    <div class="entrevista">
-
-      <div class="pregunta">
-        ¿Qué pasó durante esos ocho meses?
-      </div>
-
-      <p class="respuesta">
-        Fueron meses muy complicados. Estaba acostumbrado a entrenar, jugar y
-        competir, y de repente tuve que detenerme. Tuve que trabajar mucho en
-        mi recuperación y también mentalmente para no dejar que la situación
-        me hiciera abandonar mi sueño.
-      </p>
-
-      <div class="pregunta">
-        ¿Pensaste en dejar el fútbol?
-      </div>
-
-      <p class="respuesta">
-        Hubo momentos en los que las dudas aparecieron. Cuando llevas tanto
-        tiempo sin jugar es fácil preguntarte si vale la pena seguir. Pero
-        siempre hubo algo dentro de mí que me decía que todavía no era el
-        momento de rendirme.
-      </p>
-
-      <div class="pregunta">
-        ¿Quién te ayudó durante ese proceso?
-      </div>
-
-      <p class="respuesta">
-        Mi mamá fue una de las personas que más me apoyó. Siempre estuvo
-        pendiente de mí, me ayudó a seguir adelante y nunca dejó de creer en
-        que podía volver a jugar.
-      </p>
-
-      <div class="pregunta">
-        ¿Qué papel tuvo Zuri?
-      </div>
-
-      <p class="respuesta">
-        Zuri fue muy importante. En momentos en los que necesitaba hablar o
-        simplemente sentir que alguien estaba conmigo, ella estuvo presente.
-        Su apoyo y la manera en que me escuchó durante los momentos difíciles
-        significaron mucho para mí.
-      </p>
-
-      <div class="pregunta">
-        ¿Qué significan para ti Don Rudy y tu tío Julio?
-      </div>
-
-      <p class="respuesta">
-        Son dos personas que dejaron una huella muy importante en mi vida.
-        Don Rudy fue alguien muy especial para mí, prácticamente como un
-        segundo padre. Siempre creyó en mí y me dio consejos que todavía
-        recuerdo.
-      </p>
-
-      <p class="respuesta">
-        Mi tío Julio también ocupa un lugar muy especial. Ha estado presente
-        en diferentes etapas de mi vida y me enseñó muchas cosas que van más
-        allá del fútbol. Aunque ya no estén físicamente conmigo, forman parte
-        de mi historia y de la persona que soy.
-      </p>
-
-      <div class="pregunta">
-        ¿Qué significa volver al fútbol?
-      </div>
-
-      <p class="respuesta">
-        Significa mucho. Después de todo lo que pasó, volver a una cancha se
-        siente diferente. Ahora valoro mucho más cada entrenamiento, cada
-        partido y cada oportunidad.
-      </p>
-
-      <div class="pregunta">
-        ¿Qué aprendiste de todo esto?
-      </div>
-
-      <p class="respuesta">
-        Aprendí que las cosas pueden cambiar de un momento a otro, pero que
-        uno tiene que seguir trabajando. También aprendí a valorar a las
-        personas que permanecen contigo cuando las cosas no salen bien.
-      </p>
-
-    </div>
-  </section>
-
-  <section id="personas">
-    <h2>Las personas detrás de mi historia</h2>
-
-    <div class="card">
-      <h3>Luz Albeyda Dionisio Jiménez, mi mamá</h3>
-
-      <p>
-        Mi mamá, <strong>Luz Albeyda Dionisio Jiménez</strong>, es una de las
-        personas más importantes de mi vida y una parte fundamental de mi
-        camino dentro del fútbol.
-      </p>
-
-      <p>
-        Desde que comencé a perseguir este sueño, ella ha estado conmigo en
-        muchas de las etapas más importantes. Me ha apoyado cuando las cosas
-        han salido bien, pero sobre todo cuando han llegado los momentos
-        difíciles, cuando he tenido obstáculos y cuando he llegado a dudar de
-        mí mismo.
-      </p>
-
-      <p>
-        Muchas veces hizo esfuerzos para ayudarme a seguir adelante y buscar
-        nuevas oportunidades. Su apoyo no solamente ha sido económico, también
-        ha sido emocional. Sus palabras, sus consejos y la confianza que siempre
-        ha tenido en mí me han dado fuerzas para continuar.
-      </p>
-
-      <p>
-        Sé que detrás de muchas oportunidades que he tenido también está su
-        esfuerzo y todo lo que ha hecho por mí. Por eso, cada vez que entro a
-        una cancha y sigo luchando por mi sueño, también recuerdo todo lo que
-        ella ha hecho para ayudarme a llegar hasta aquí.
-      </p>
-
-      <p>
-        <strong>Si hoy sigo persiguiendo mi sueño, una parte importante se la
-        debo a mi mamá.</strong>
-      </p>
+    <div class="dato">
+      <strong>Fecha de nacimiento</strong>
+      <span>27/06/2007</span>
     </div>
 
-    <div class="card">
-      <h3>Zuri Elizabeth Flores Alamilla</h3>
-
-      <p>
-        <strong>Zuri Elizabeth Flores Alamilla</strong> es una de las personas
-        más importantes de mi vida y también forma parte de mi historia dentro
-        y fuera del fútbol.
-      </p>
-
-      <p>
-        Desde jóvenes hemos compartido muchos momentos, sueños y etapas que
-        han dejado una huella importante en mi vida. Durante momentos difíciles,
-        cuando las cosas no salían como esperaba, ella estuvo ahí para
-        escucharme, entenderme y darme su apoyo.
-      </p>
-
-      <p>
-        Con ella también llegué a imaginar un futuro juntos, formar nuestra
-        propia familia y construir una vida compartiendo nuestros sueños.
-        Para mí, eso hizo que nuestra historia tuviera un significado todavía
-        más especial.
-      </p>
-
-      <p>
-        Nuestra relación también ha pasado por momentos difíciles, pero cada
-        etapa me ha dejado aprendizajes y recuerdos que forman parte de quien
-        soy. Valoro especialmente haber tenido a alguien que estuvo presente
-        no solamente cuando todo iba bien, sino también cuando las cosas se
-        complicaban.
-      </p>
-
-      <p>
-        Por eso, cuando miro todo el camino que he recorrido,
-        <strong>Zuri también ocupa un lugar importante en mi historia.</strong>
-      </p>
+    <div class="dato">
+      <strong>Origen</strong>
+      <span>Villa Cuauhtémoc, Centla, Tabasco</span>
     </div>
 
-    <div class="card">
-      <h3>Don Rudy</h3>
-
-      <p>
-        Don Rudy fue una de las personas que más marcó mi vida. Para mí fue
-        mucho más que alguien que me daba consejos. Fue como un segundo padre.
-      </p>
-
-      <p>
-        Creyó en mí desde una etapa importante de mi vida y siempre tuvo
-        palabras que me ayudaron a seguir adelante. Me hubiera gustado que
-        pudiera verme continuar con mi sueño, regresar después de las lesiones
-        y volver a pisar una cancha.
-      </p>
-
-      <p>
-        Aunque ya no está físicamente, sus enseñanzas, sus consejos y todo lo
-        que viví con él siguen formando parte de mi historia.
-      </p>
-
-      <p>
-        <strong>Descansa en paz, Don Rudy. Siempre serás parte de mi camino.
-        ❤️</strong>
-      </p>
+    <div class="dato">
+      <strong>Posición</strong>
+      <span>Volante por derecha o izquierda</span>
     </div>
 
-    <div class="card">
-      <h3>Mi tío Julio</h3>
-
-      <p>
-        Mi tío Julio ocupa un lugar muy especial en mi vida. Ha formado parte
-        de mi historia desde que era pequeño y me enseñó muchas cosas que van
-        más allá del fútbol.
-      </p>
-
-      <p>
-        Guardo muchos recuerdos y enseñanzas de los momentos que compartimos.
-        Todo eso forma parte de la persona que soy actualmente y de la manera
-        en que veo la vida.
-      </p>
-
-      <p>
-        Aunque ya no esté físicamente, las personas importantes nunca
-        desaparecen completamente. Sus enseñanzas, sus recuerdos y todo lo que
-        dejaron en nosotros continúan acompañándonos.
-      </p>
-
-      <p>
-        <strong>Mi tío Julio siempre será parte de mi historia. ❤️</strong>
-      </p>
+    <div class="dato">
+      <strong>Perfil</strong>
+      <span>Derecho</span>
     </div>
-  </section>
 
-  <section class="agradecimientos">
-    <h2>Agradecimientos</h2>
+    <div class="dato">
+      <strong>Número</strong>
+      <span>#8</span>
+    </div>
+
+    <div class="dato">
+      <strong>Estatura</strong>
+      <span>1.62 m</span>
+    </div>
+
+    <div class="dato">
+      <strong>Club</strong>
+      <span>Alebrijes</span>
+    </div>
+
+    <div class="dato">
+      <strong>Competición</strong>
+      <span>Liga TDP</span>
+    </div>
+
+    <div class="dato">
+      <strong>Temporada</strong>
+      <span>2026-2027</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     HISTORIA
+========================= -->
+
+<section id="historia">
+
+  <h2>Mi historia</h2>
+
+  <div class="card">
 
     <p>
-      A mi mamá, <strong>Luz Albeyda Dionisio Jiménez</strong>, por nunca dejar
-      de creer en mí y por todo lo que ha hecho para ayudarme a seguir adelante.
+      Mi historia con el fútbol comenzó desde muy pequeño.
+      Desde los 6 años empecé a jugar en las calles de Villa
+      Cuauhtémoc, donde nació el sueño de algún día poder
+      dedicarme al fútbol.
     </p>
 
     <p>
-      A <strong>Zuri Elizabeth Flores Alamilla</strong>, por estar presente en
-      momentos importantes de mi vida y por formar parte de mi historia.
+      Con el paso de los años fui buscando oportunidades para
+      demostrar lo que podía hacer. Una de las personas y equipos
+      que me ayudaron en ese camino fueron los
+      <strong>Deportivos Lobos de Zaragoza</strong>, un equipo del
+      barrio que creyó en mí y me apoyó económicamente para poder
+      asistir a pruebas y seguir buscando oportunidades.
     </p>
 
     <p>
-      A mi familia, por acompañarme y apoyarme durante este camino.
+      También tuve que aprender desde muy joven lo que significa
+      esforzarse. Comencé a trabajar desde los 12 años mientras
+      continuaba persiguiendo mi sueño dentro del fútbol.
     </p>
 
     <p>
-      A <strong>Don Rudy</strong>, por todo lo que me enseñó, por creer en mí
-      y por haber sido una persona tan importante en mi vida. Descansa en paz.
+      Después de diferentes experiencias y oportunidades, mi camino
+      me llevó hasta <strong>Alebrijes</strong>, donde pude continuar
+      creciendo como futbolista y acercarme cada vez más al sueño
+      que comenzó jugando en las calles de mi pueblo.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     LOBOS
+========================= -->
+
+<section id="lobos">
+
+  <h2>Deportivos Lobos de Zaragoza</h2>
+
+  <div class="card">
+
+    <p>
+      Lobos de Zaragoza fue un equipo del barrio que me dio una
+      oportunidad cuando más la necesitaba.
     </p>
 
     <p>
-      A mi <strong>tío Julio</strong>, por sus enseñanzas, sus consejos y por
-      formar parte de mi vida desde pequeño. Descansa en paz.
-    </p>
-  </section>
-
-  <section class="sueño">
-    <h2>El sueño continúa</h2>
-
-    <p>
-      Sí. El sueño sigue.
+      No fue solamente un equipo para mí, también fue parte
+      importante del camino que me permitió seguir buscando mi sueño.
     </p>
 
     <p>
-      Y ahora voy por más. ⚽🔥
+      Recuerdo con agradecimiento el apoyo que recibí para poder
+      asistir a pruebas y continuar intentando llegar más lejos
+      en el fútbol.
     </p>
-  </section>
 
-  <footer>
-    © 2026 Miguel Ángel Sánchez Dionisio · Futbolista
-  </footer>
+  </div>
+
+  <div class="galeria">
+
+    <img src="IMG-20240616-WA0050.jpg"
+         alt="Miguel Ángel Sánchez Dionisio con Lobos de Zaragoza"
+         onclick="abrirFoto(this.src)">
+
+    <img src="IMG-20240616-WA0057.jpg"
+         alt="Miguel Ángel Sánchez Dionisio jugando con Lobos de Zaragoza"
+         onclick="abrirFoto(this.src)">
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SUPERACIÓN
+========================= -->
+
+<section id="superacion">
+
+  <h2>Superación</h2>
+
+  <div class="card">
+
+    <p>
+      El camino no siempre ha sido fácil. Uno de los momentos más
+      complicados de mi carrera llegó cuando sufrí dos fisuras en
+      el tobillo izquierdo, situación que me mantuvo aproximadamente
+      ocho meses alejado del fútbol profesional.
+    </p>
+
+    <p>
+      Fueron meses difíciles tanto física como emocionalmente.
+      Estar lejos de una cancha, de los entrenamientos y de aquello
+      que más me gusta hacer fue un proceso complicado.
+    </p>
+
+    <p>
+      Cuando finalmente pude regresar, tuve que volver a enfrentar
+      otro obstáculo. Hace aproximadamente un mes sufrí una
+      distensión del ligamento colateral de la rodilla derecha.
+    </p>
+
+    <p>
+      Cada lesión me ha enseñado que regresar no significa solamente
+      volver físicamente. También significa recuperar la confianza,
+      tener paciencia y seguir creyendo cuando parece que el camino
+      se hace más largo.
+    </p>
+
+    <p>
+      Hoy puedo decir que he superado cada uno de esos obstáculos y
+      que sigo aquí, persiguiendo el mismo sueño que comenzó cuando
+      era niño.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ENTREVISTA
+========================= -->
+
+<section id="entrevista">
+
+  <h2>🎙️ Entrevista</h2>
+
+  <p style="text-align:center;">
+    Toca una pregunta para abrir la respuesta.
+  </p>
+
+  <div class="entrevista">
+
+    <details>
+      <summary>¿Qué pasó durante esos ocho meses?</summary>
+
+      <div class="respuesta">
+        Fueron meses muy complicados. Estaba acostumbrado a entrenar,
+        jugar y competir, y de repente tuve que detenerme. Tuve que
+        trabajar mucho en mi recuperación y también mentalmente para
+        no dejar que la situación me hiciera abandonar mi sueño.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Pensaste en dejar el fútbol?</summary>
+
+      <div class="respuesta">
+        Hubo momentos en los que las dudas aparecieron. Cuando llevas
+        tanto tiempo sin jugar es fácil preguntarte si vale la pena
+        seguir. Pero siempre hubo algo dentro de mí que me decía que
+        todavía no era el momento de rendirme.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Quién te ayudó durante ese proceso?</summary>
+
+      <div class="respuesta">
+        Mi mamá fue una de las personas que más me apoyó. Siempre
+        estuvo pendiente de mí, me ayudó a seguir adelante y nunca
+        dejó de creer en que podía volver a jugar.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Qué papel tuvo Zuri?</summary>
+
+      <div class="respuesta">
+        Zuri fue muy importante. En momentos en los que necesitaba
+        hablar o simplemente sentir que alguien estaba conmigo,
+        ella estuvo presente. Su apoyo y la manera en que me escuchó
+        durante los momentos difíciles significaron mucho para mí.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Qué significan para ti Don Rudy y tu tío Julio?</summary>
+
+      <div class="respuesta">
+        Son dos personas que dejaron una huella muy importante en
+        mi vida. Don Rudy fue alguien muy especial para mí,
+        prácticamente como un segundo padre. Siempre creyó en mí
+        y me dio consejos que todavía recuerdo.
+
+        <br><br>
+
+        Mi tío Julio también ocupa un lugar muy especial. Ha estado
+        presente en diferentes etapas de mi vida y me enseñó muchas
+        cosas que van más allá del fútbol. Aunque ya no estén
+        físicamente conmigo, forman parte de mi historia y de la
+        persona que soy.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Qué significa volver al fútbol?</summary>
+
+      <div class="respuesta">
+        Significa mucho. Después de todo lo que pasó, volver a una
+        cancha se siente diferente. Ahora valoro mucho más cada
+        entrenamiento, cada partido y cada oportunidad.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Qué aprendiste de todo esto?</summary>
+
+      <div class="respuesta">
+        Aprendí que las cosas pueden cambiar de un momento a otro,
+        pero que uno tiene que seguir trabajando. También aprendí
+        a valorar a las personas que permanecen contigo cuando las
+        cosas no salen bien.
+      </div>
+    </details>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PERSONAS ESPECIALES
+========================= -->
+
+<section id="personas">
+
+  <h2>❤️ Las personas detrás de mi historia</h2>
+
+  <p style="text-align:center;">
+    Toca cada nombre para conocer su historia.
+  </p>
+
+  <div class="personas">
+
+
+    <!-- MAMÁ -->
+
+    <div class="persona">
+
+      <button onclick="togglePersona(this)">
+        Luz Albeyda Dionisio Jiménez
+      </button>
+
+      <div class="persona-contenido">
+
+        <p>
+          Mi mamá, <strong>Luz Albeyda Dionisio Jiménez</strong>,
+          es una de las personas más importantes de mi vida y una
+          parte fundamental de mi camino dentro del fútbol.
+        </p>
+
+        <p>
+          Desde que comencé a perseguir este sueño, ella ha estado
+          conmigo en muchas de las etapas más importantes. Me ha
+          apoyado cuando las cosas han salido bien, pero sobre todo
+          cuando han llegado los momentos difíciles.
+        </p>
+
+        <p>
+          Muchas veces hizo esfuerzos para ayudarme a seguir adelante
+          y buscar nuevas oportunidades. Su apoyo no solamente ha sido
+          económico, también ha sido emocional.
+        </p>
+
+        <p>
+          Sus palabras, sus consejos y la confianza que siempre ha
+          tenido en mí me han dado fuerzas para continuar.
+        </p>
+
+        <p>
+          <strong>
+            Si hoy sigo persiguiendo mi sueño, una parte importante
+            se la debo a mi mamá. ❤️
+          </strong>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- ZURI -->
+
+    <div class="persona">
+
+      <button onclick="togglePersona(this)">
+        Zuri Elizabeth Flores Alamilla
+      </button>
+
+      <div class="persona-contenido">
+
+        <p>
+          <strong>Zuri Elizabeth Flores Alamilla</strong> es una de
+          las personas más importantes de mi vida y también forma
+          parte de mi historia dentro y fuera del fútbol.
+        </p>
+
+        <p>
+          Desde jóvenes hemos compartido muchos momentos, sueños y
+          etapas que han dejado una huella importante en mi vida.
+          Durante momentos difíciles, cuando las cosas no salían como
+          esperaba, ella estuvo ahí para escucharme, entenderme y
+          darme su apoyo.
+        </p>
+
+        <p>
+          Con ella también llegué a imaginar un futuro juntos,
+          formar nuestra propia familia y construir una vida
+          compartiendo nuestros sueños.
+        </p>
+
+        <p>
+          Nuestra relación también ha pasado por momentos difíciles,
+          pero cada etapa me ha dejado aprendizajes y recuerdos que
+          forman parte de quien soy.
+        </p>
+
+        <p>
+          <strong>
+            Zuri ocupa un lugar importante en mi historia. ❤️
+          </strong>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- DON RUDY -->
+
+    <div class="persona">
+
+      <button onclick="togglePersona(this)">
+        Don Rudy
+      </button>
+
+      <div class="persona-contenido">
+
+        <p>
+          Don Rudy fue una de las personas que más marcó mi vida.
+          Para mí fue mucho más que alguien que me daba consejos.
+          Fue como un segundo padre.
+        </p>
+
+        <p>
+          Creyó en mí desde una etapa importante de mi vida y siempre
+          tuvo palabras que me ayudaron a seguir adelante.
+        </p>
+
+        <p>
+          Me hubiera gustado que pudiera verme continuar con mi sueño,
+          regresar después de las lesiones y volver a pisar una cancha.
+        </p>
+
+        <p>
+          Aunque ya no está físicamente, sus enseñanzas, sus consejos
+          y todo lo que viví con él siguen formando parte de mi historia.
+        </p>
+
+        <p>
+          <strong>
+            Descansa en paz, Don Rudy. Siempre serás parte de mi camino. ❤️
+          </strong>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- TÍO JULIO -->
+
+    <div class="persona">
+
+      <button onclick="togglePersona(this)">
+        Mi tío Julio
+      </button>
+
+      <div class="persona-contenido">
+
+        <p>
+          Mi tío Julio ocupa un lugar muy especial en mi vida.
+          Ha formado parte de mi historia desde que era pequeño y
+          me enseñó muchas cosas que van más allá del fútbol.
+        </p>
+
+        <p>
+          Guardo muchos recuerdos y enseñanzas de los momentos que
+          compartimos. Todo eso forma parte de la persona que soy
+          actualmente y de la manera en que veo la vida.
+        </p>
+
+        <p>
+          Aunque ya no esté físicamente, las personas importantes
+          nunca desaparecen completamente. Sus enseñanzas, sus
+          recuerdos y todo lo que dejaron en nosotros continúan
+          acompañándonos.
+        </p>
+
+        <p>
+          <strong>
+            Mi tío Julio siempre será parte de mi historia. ❤️
+          </strong>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     COMPARTIR
+========================= -->
+
+<section id="compartir" class="compartir">
+
+  <h2>📲 Comparte mi historia</h2>
+
+  <p>
+    Si quieres compartir mi página, puedes hacerlo desde aquí.
+  </p>
+
+  <div class="botones-compartir">
+
+    <a
+      class="boton-compartir"
+      href="https://wa.me/?text=Mira%20la%20historia%20de%20Miguel%20Ángel%20Sánchez%20Dionisio%20https%3A%2F%2Fmiguelangelsanchez8.github.io%2F"
+      target="_blank">
+      WhatsApp
+    </a>
+
+
+    <a
+      class="boton-compartir"
+      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmiguelangelsanchez8.github.io%2F"
+      target="_blank">
+      Facebook
+    </a>
+
+
+    <button
+      class="boton-compartir"
+      onclick="compartirPagina()">
+      📤 Compartir
+    </button>
+
+
+    <button
+      class="boton-compartir"
+      onclick="copiarEnlace()">
+      🔗 Copiar enlace
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SUEÑO
+========================= -->
+
+<section class="sueño">
+
+  <h2>El sueño continúa</h2>
+
+  <p>
+    Sí. El sueño sigue.
+  </p>
+
+  <p>
+    Y ahora voy por más. ⚽🔥
+  </p>
+
+</section>
+
+
+<!-- =========================
+     BOTÓN ARRIBA
+========================= -->
+
+<button id="arriba" onclick="volverArriba()">
+  ↑
+</button>
+
+
+<!-- =========================
+     MODAL FOTO
+========================= -->
+
+<div id="modalFoto" onclick="cerrarFoto()">
+
+  <span id="cerrarFoto">×</span>
+
+  <img id="fotoGrande" src="" alt="Foto ampliada">
+
+</div>
+
+
+<footer>
+
+  © 2026 Miguel Ángel Sánchez Dionisio · Futbolista
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+  /* PERSONAS */
+
+  function togglePersona(button) {
+
+    const tarjeta = button.parentElement;
+
+    tarjeta.classList.toggle("activa");
+
+  }
+
+
+  /* FOTO GRANDE */
+
+  function abrirFoto(src) {
+
+    document.getElementById("fotoGrande").src = src;
+
+    document.getElementById("modalFoto").style.display = "flex";
+
+  }
+
+
+  function cerrarFoto() {
+
+    document.getElementById("modalFoto").style.display = "none";
+
+  }
+
+
+  /* BOTÓN ARRIBA */
+
+  window.addEventListener("scroll", function() {
+
+    const boton = document.getElementById("arriba");
+
+    if (window.scrollY > 500) {
+
+      boton.classList.add("visible");
+
+    } else {
+
+      boton.classList.remove("visible");
+
+    }
+
+  });
+
+
+  function volverArriba() {
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+  }
+
+
+  /* COMPARTIR */
+
+  async function compartirPagina() {
+
+    const datos = {
+      title: "Miguel Ángel Sánchez Dionisio | Futbolista",
+      text: "Conoce la historia de Miguel Ángel Sánchez Dionisio, futbolista mexicano.",
+      url: "https://miguelangelsanchez8.github.io/"
+    };
+
+    if (navigator.share) {
+
+      try {
+
+        await navigator.share(datos);
+
+      } catch (error) {
+
+        console.log("Compartir cancelado");
+
+      }
+
+    } else {
+
+      copiarEnlace();
+
+      alert("El enlace fue copiado. Ya puedes pegarlo donde quieras.");
+
+    }
+
+  }
+
+
+  /* COPIAR ENLACE */
+
+  function copiarEnlace() {
+
+    const enlace = "https://miguelangelsanchez8.github.io/";
+
+    navigator.clipboard.writeText(enlace)
+      .then(function() {
+
+        alert("¡Enlace copiado! 🔗");
+
+      })
+      .catch(function() {
+
+        prompt("Copia este enlace:", enlace);
+
+      });
+
+  }
+
+
+  /* CERRAR FOTO CON ESC */
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+      cerrarFoto();
+
+    }
+
+  });
+
+</script>
 
 </body>
-</html>
+  </html>
