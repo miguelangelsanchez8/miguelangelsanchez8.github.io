@@ -16,6 +16,8 @@
 
   <link rel="canonical" href="https://miguelangelsanchez8.github.io/">
 
+  <!-- GOOGLE / SEO -->
+
   <meta name="theme-color" content="#080808">
 
   <!-- OPEN GRAPH -->
@@ -65,24 +67,6 @@
   }
   </script>
 
-  <!-- ==================================================
-       GOOGLE ANALYTICS
-  =================================================== -->
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RY8MMERHP"></script>
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag(){
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-4RY8MMERHP');
-  </script>
-
 
   <style>
 
@@ -104,7 +88,6 @@
       overflow-x: hidden;
     }
 
-
     /* =========================
        PORTADA
     ========================= */
@@ -124,7 +107,6 @@
 
     .hero {
       max-width: 900px;
-      animation: aparecer 1.3s ease;
     }
 
     .hero img {
@@ -156,7 +138,6 @@
       margin: 10px 0;
     }
 
-
     /* =========================
        NAVEGACIÓN
     ========================= */
@@ -185,7 +166,6 @@
       color: #ff6a00;
     }
 
-
     /* =========================
        SECCIONES
     ========================= */
@@ -208,7 +188,6 @@
       font-size: 17px;
       margin-bottom: 15px;
     }
-
 
     /* =========================
        PERFIL
@@ -246,7 +225,6 @@
       font-weight: bold;
     }
 
-
     /* =========================
        TARJETAS
     ========================= */
@@ -258,7 +236,6 @@
       padding: 25px;
       margin-top: 20px;
     }
-
 
     /* =========================
        GALERÍA
@@ -286,9 +263,8 @@
       border-color: #ff6a00;
     }
 
-
     /* =========================
-       ENTREVISTA
+       ENTREVISTA DESPLEGABLE
     ========================= */
 
     .entrevista details {
@@ -331,7 +307,6 @@
       padding: 0 20px 20px;
       color: #ccc;
     }
-
 
     /* =========================
        PERSONAS ESPECIALES
@@ -388,7 +363,6 @@
     .persona.activa .persona-contenido {
       display: block;
     }
-
 
     /* =========================
        POR QUÉ JUEGO
@@ -456,134 +430,1036 @@
       margin-bottom: 0;
     }
 
-
-    /* =================================================
-       EL NIÑO QUE NO DEJÓ DE SOÑAR
-    ================================================= */
-
-    .sueño-historia {
-      background:
-        radial-gradient(circle at center, rgba(255,106,0,.12), transparent 55%),
-        #0b0b0b;
-      border-top: 1px solid #222;
-      border-bottom: 1px solid #222;
-      max-width: none;
-      padding: 100px 20px;
-    }
-
-    .historia-interactiva {
-      max-width: 850px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .historia-etapa {
-      display: none;
-      animation: etapaEntrar .7s ease;
-    }
-
-    .historia-etapa.activa {
-      display: block;
-    }
-
-    .historia-numero {
-      font-size: 75px;
-      font-weight: bold;
-      color: #ff6a00;
-      line-height: 1;
-      margin-bottom: 20px;
-    }
-
-    .historia-etapa h3 {
-      font-size: clamp(28px, 6vw, 48px);
-      margin-bottom: 20px;
-    }
-
-    .historia-etapa p {
-      max-width: 700px;
-      margin: 0 auto 20px;
-      color: #ccc;
-      font-size: 18px;
-    }
-
-    .historia-boton {
-      margin-top: 20px;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 30px;
-      background: #ff6a00;
-      color: white;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-      transition: .3s;
-    }
-
-    .historia-boton:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(255,106,0,.35);
-    }
-
-    .historia-puntos {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 35px;
-    }
-
-    .historia-punto {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: #333;
-      transition: .3s;
-    }
-
-    .historia-punto.activo {
-      background: #ff6a00;
-      transform: scale(1.4);
-    }
-
-    .historia-final {
-      font-size: clamp(38px, 8vw, 70px);
-      color: #ff6a00;
-      font-weight: bold;
-      line-height: 1.1;
-    }
-
-
-    /* =========================
-       NARRADOR
-    ========================= */
-
-    .narrador {
-      margin-top: 35px;
-      text-align: center;
-    }
-
-    .boton-narrador {
-      background: #161616;
-      color: white;
-      border: 1px solid #ff6a00;
-      border-radius: 30px;
-      padding: 14px 25px;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: bold;
-      transition: .3s;
-    }
-
-    .boton-narrador:hover {
-      background: #ff6a00;
-    }
-
-    .boton-narrador.leyendo {
-      background: #ff6a00;
-    }
-
-
     /* =========================
        COMPARTIR
     ========================= */
 
-    .compartir
+    .compartir {
+      text-align: center;
+      padding: 60px 20px;
+      background: #0e0e0e;
+    }
+
+    .botones-compartir {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .boton-compartir {
+      border: none;
+      border-radius: 10px;
+      padding: 14px 20px;
+      color: white;
+      background: #202020;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: .25s;
+    }
+
+    .boton-compartir:hover {
+      transform: translateY(-3px);
+      background: #ff6a00;
+    }
+
+    /* =========================
+       SUEÑO
+    ========================= */
+
+    .sueño {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(#080808, #151515);
+    }
+
+    .sueño h2 {
+      font-size: clamp(38px, 7vw, 65px);
+    }
+
+    .sueño p {
+      font-size: 25px;
+    }
+
+    /* =========================
+       BOTÓN ARRIBA
+    ========================= */
+
+    #arriba {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      background: #ff6a00;
+      color: white;
+      font-size: 23px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1000;
+      display: none;
+      box-shadow: 0 5px 20px rgba(0,0,0,.5);
+    }
+
+    #arriba.visible {
+      display: block;
+    }
+
+    /* =========================
+       MODAL DE FOTOS
+    ========================= */
+
+    #modalFoto {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.93);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    #modalFoto img {
+      max-width: 95%;
+      max-height: 90vh;
+      border-radius: 12px;
+    }
+
+    #cerrarFoto {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #222;
+      color: #777;
+    }
+
+    /* =========================
+       CELULAR
+    ========================= */
+
+    @media (max-width: 600px) {
+
+      header {
+        min-height: 90vh;
+      }
+
+      .hero img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .numero {
+        font-size: 55px;
+      }
+
+      section {
+        padding: 55px 17px;
+      }
+
+      section h2 {
+        font-size: 30px;
+      }
+
+      section p {
+        font-size: 16px;
+      }
+
+      .personas {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .galeria img {
+        height: 300px;
+      }
+
+      .boton-compartir {
+        width: 100%;
+      }
+
+      .porque summary {
+        padding: 20px;
+        padding-right: 55px;
+      }
+
+      .porque-contenido {
+        padding: 0 20px 20px;
+        padding-top: 20px;
+      }
+
+      #arriba {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- =========================
+     PORTADA
+========================= -->
+
+<header id="inicio">
+
+  <div class="hero">
+
+    <img src="miguel.jpg"
+         alt="Miguel Ángel Sánchez Dionisio">
+
+    <h1>Miguel Ángel Sánchez Dionisio</h1>
+
+    <p>Futbolista mexicano</p>
+
+    <div class="numero">#8</div>
+
+    <p>Volante por derecha o izquierda · Perfil derecho</p>
+
+  </div>
+
+</header>
+
+
+<!-- =========================
+     MENÚ
+========================= -->
+
+<nav>
+
+  <a href="#perfil">Perfil</a>
+  <a href="#historia">Historia</a>
+  <a href="#lobos">Lobos</a>
+  <a href="#superacion">Superación</a>
+  <a href="#porque">¿Por qué juego?</a>
+  <a href="#entrevista">Entrevista</a>
+  <a href="#personas">Personas</a>
+  <a href="#compartir">Compartir</a>
+
+</nav>
+
+
+<!-- =========================
+     PERFIL
+========================= -->
+
+<section id="perfil">
+
+  <h2>Perfil futbolístico</h2>
+
+  <div class="perfil">
+
+    <div class="dato">
+      <strong>Nombre</strong>
+      <span>Miguel Ángel Sánchez Dionisio</span>
+    </div>
+
+    <div class="dato">
+      <strong>Fecha de nacimiento</strong>
+      <span>27/06/2007</span>
+    </div>
+
+    <div class="dato">
+      <strong>Origen</strong>
+      <span>Villa Cuauhtémoc, Centla, Tabasco</span>
+    </div>
+
+    <div class="dato">
+      <strong>Posición</strong>
+      <span>Volante por derecha o izquierda</span>
+    </div>
+
+    <div class="dato">
+      <strong>Perfil</strong>
+      <span>Derecho</span>
+    </div>
+
+    <div class="dato">
+      <strong>Número</strong>
+      <span>#8</span>
+    </div>
+
+    <div class="dato">
+      <strong>Estatura</strong>
+      <span>1.62 m</span>
+    </div>
+
+    <div class="dato">
+      <strong>Club</strong>
+      <span>Alebrijes</span>
+    </div>
+
+    <div class="dato">
+      <strong>Competición</strong>
+      <span>Liga TDP</span>
+    </div>
+
+    <div class="dato">
+      <strong>Temporada</strong>
+      <span>2026-2027</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     HISTORIA
+========================= -->
+
+<section id="historia">
+
+  <h2>Mi historia</h2>
+
+  <div class="card">
+
+    <p>
+      Mi historia con el fútbol comenzó desde muy pequeño.
+      Desde los 6 años empecé a jugar en las calles de Villa
+      Cuauhtémoc, donde nació el sueño de algún día poder
+      dedicarme al fútbol.
+    </p>
+
+    <p>
+      Con el paso de los años fui buscando oportunidades para
+      demostrar lo que podía hacer. Una de las personas y equipos
+      que me ayudaron en ese camino fueron los
+      <strong>Deportivos Lobos de Zaragoza</strong>, un equipo del
+      barrio que creyó en mí y me apoyó económicamente para poder
+      asistir a pruebas y seguir buscando oportunidades.
+    </p>
+
+    <p>
+      También tuve que aprender desde muy joven lo que significa
+      esforzarse. Comencé a trabajar desde los 12 años mientras
+      continuaba persiguiendo mi sueño dentro del fútbol.
+    </p>
+
+    <p>
+      Después de diferentes experiencias y oportunidades, mi camino
+      me llevó hasta <strong>Alebrijes</strong>, donde pude continuar
+      creciendo como futbolista y acercarme cada vez más al sueño
+      que comenzó jugando en las calles de mi pueblo.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     LOBOS
+========================= -->
+
+<section id="lobos">
+
+  <h2>Deportivos Lobos de Zaragoza</h2>
+
+  <div class="card">
+
+    <p>
+      Lobos de Zaragoza fue un equipo del barrio que me dio una
+      oportunidad cuando más la necesitaba.
+    </p>
+
+    <p>
+      No fue solamente un equipo para mí, también fue parte
+      importante del camino que me permitió seguir buscando mi sueño.
+    </p>
+
+    <p>
+      Recuerdo con agradecimiento el apoyo que recibí para poder
+      asistir a pruebas y continuar intentando llegar más lejos
+      en el fútbol.
+    </p>
+
+  </div>
+
+  <div class="galeria">
+
+    <img src="IMG-20240616-WA0050.jpg"
+         alt="Miguel Ángel Sánchez Dionisio con Lobos de Zaragoza"
+         onclick="abrirFoto(this.src)">
+
+    <img src="IMG-20240616-WA0057.jpg"
+         alt="Miguel Ángel Sánchez Dionisio jugando con Lobos de Zaragoza"
+         onclick="abrirFoto(this.src)">
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SUPERACIÓN
+========================= -->
+
+<section id="superacion">
+
+  <h2>Superación</h2>
+
+  <div class="card">
+
+    <p>
+      El camino no siempre ha sido fácil. Uno de los momentos más
+      complicados de mi carrera llegó cuando sufrí dos fisuras en
+      el tobillo izquierdo, situación que me mantuvo aproximadamente
+      ocho meses alejado del fútbol profesional.
+    </p>
+
+    <p>
+      Fueron meses difíciles tanto física como emocionalmente.
+      Estar lejos de una cancha, de los entrenamientos y de aquello
+      que más me gusta hacer fue un proceso complicado.
+    </p>
+
+    <p>
+      Cuando finalmente pude regresar, tuve que volver a enfrentar
+      otro obstáculo. Hace aproximadamente un mes sufrí una
+      distensión del ligamento colateral de la rodilla derecha.
+    </p>
+
+    <p>
+      Cada lesión me ha enseñado que regresar no significa solamente
+      volver físicamente. También significa recuperar la confianza,
+      tener paciencia y seguir creyendo cuando parece que el camino
+      se hace más largo.
+    </p>
+
+    <p>
+      Hoy puedo decir que he superado cada uno de esos obstáculos y
+      que sigo aquí, persiguiendo el mismo sueño que comenzó cuando
+      era niño.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     POR QUÉ JUEGO
+========================= -->
+
+<section id="porque">
+
+  <h2>🧡 ¿Por qué juego?</h2>
+
+  <p style="text-align:center;">
+    Toca para conocer la historia detrás de mi pasión por el fútbol.
+  </p>
+
+  <div class="porque">
+
+    <details>
+
+      <summary>
+        ⚽ La historia detrás de mi pasión
+        <span class="porque-subtitulo">
+          Desde jugar descalzo en la calle hasta perseguir un sueño
+        </span>
+      </summary>
+
+      <div class="porque-contenido">
+
+        <p>
+          Juego porque el fútbol forma parte de mí desde que era niño.
+        </p>
+
+        <p>
+          Empecé jugando descalzo en la calle con mis amigos, sin
+          pensar en equipos, competencias ni en llegar a ser profesional.
+          Solamente quería jugar, correr detrás de una pelota y disfrutar
+          cada momento.
+        </p>
+
+        <p>
+          Había días en los que ni siquiera necesitaba salir de casa.
+          Me ponía a jugar yo solo en la sala, imaginando partidos y
+          haciendo de cuenta que estaba en una cancha de verdad.
+          Desde entonces, aunque todavía no sabía hasta dónde podía
+          llegar, el fútbol ya era una parte importante de mi vida.
+        </p>
+
+        <p>
+          Con el paso de los años, ese juego de niño se convirtió en
+          un sueño. Un sueño que ha tenido obstáculos, momentos difíciles
+          y muchas veces me ha obligado a empezar de nuevo.
+        </p>
+
+        <p>
+          Pero cada vez que entro a una cancha recuerdo a aquel niño
+          que jugaba descalzo en la calle con sus amigos y al que le
+          bastaba una pelota para ser feliz.
+        </p>
+
+        <p>
+          Juego por ese niño. Por mi familia. Por quienes han creído
+          en mí. Y por el sueño que empezó en una calle y que todavía
+          quiero llevar mucho más lejos. ⚽🧡
+        </p>
+
+      </div>
+
+    </details>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ENTREVISTA
+========================= -->
+
+<section id="entrevista">
+
+  <h2>🎙️ Entrevista</h2>
+
+  <p style="text-align:center;">
+    Toca una pregunta para abrir la respuesta.
+  </p>
+
+  <div class="entrevista">
+
+    <details>
+      <summary>¿Qué pasó durante esos ocho meses?</summary>
+
+      <div class="respuesta">
+        Fueron meses muy complicados. Estaba acostumbrado a entrenar,
+        jugar y competir, y de repente tuve que detenerme. Tuve que
+        trabajar mucho en mi recuperación y también mentalmente para
+        no dejar que la situación me hiciera abandonar mi sueño.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Pensaste en dejar el fútbol?</summary>
+
+      <div class="respuesta">
+        Hubo momentos en los que las dudas aparecieron. Cuando llevas
+        tanto tiempo sin jugar es fácil preguntarte si vale la pena
+        seguir. Pero siempre hubo algo dentro de mí que me decía que
+        todavía no era el momento de rendirme.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Quién te ayudó durante ese proceso?</summary>
+
+      <div class="respuesta">
+        Mi mamá fue una de las personas que más me apoyó. Siempre
+        estuvo pendiente de mí, me ayudó a seguir adelante y nunca
+        dejó de creer en que podía volver a jugar.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Qué papel tuvo Zuri?</summary>
+
+      <div class="respuesta">
+        Zuri fue muy importante. En momentos en los que necesitaba
+        hablar o simplemente sentir que alguien estaba conmigo,
+        ella estuvo presente. Su apoyo y la manera en que me escuchó
+        durante los momentos difíciles significaron mucho para mí.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Qué significan para ti Don Rudy y tu tío Julio?</summary>
+
+      <div class="respuesta">
+        Son dos personas que dejaron una huella muy importante en
+        mi vida. Don Rudy fue alguien muy especial para mí,
+        prácticamente como un segundo padre. Siempre creyó en mí
+        y me dio consejos que todavía recuerdo.
+
+        <br><br>
+
+        Mi tío Julio también ocupa un lugar muy especial. Ha estado
+        presente en diferentes etapas de mi vida y me enseñó muchas
+        cosas que van más allá del fútbol. Aunque ya no estén
+        físicamente conmigo, forman parte de mi historia y de la
+        persona que soy.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Qué significa volver al fútbol?</summary>
+
+      <div class="respuesta">
+        Significa mucho. Después de todo lo que pasó, volver a una
+        cancha se siente diferente. Ahora valoro mucho más cada
+        entrenamiento, cada partido y cada oportunidad.
+      </div>
+    </details>
+
+
+    <details>
+      <summary>¿Qué aprendiste de todo esto?</summary>
+
+      <div class="respuesta">
+        Aprendí que las cosas pueden cambiar de un momento a otro,
+        pero que uno tiene que seguir trabajando. También aprendí
+        a valorar a las personas que permanecen contigo cuando las
+        cosas no salen bien.
+      </div>
+    </details>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PERSONAS ESPECIALES
+========================= -->
+
+<section id="personas">
+
+  <h2>❤️ Las personas detrás de mi historia</h2>
+
+  <p style="text-align:center;">
+    Toca cada nombre para conocer su historia.
+  </p>
+
+  <div class="personas">
+
+
+    <!-- MAMÁ -->
+
+    <div class="persona">
+
+      <button onclick="togglePersona(this)">
+        Luz Albeyda Dionisio Jiménez
+      </button>
+
+      <div class="persona-contenido">
+
+        <p>
+          Mi mamá, <strong>Luz Albeyda Dionisio Jiménez</strong>,
+          es una de las personas más importantes de mi vida y una
+          parte fundamental de mi camino dentro del fútbol.
+        </p>
+
+        <p>
+          Desde que comencé a perseguir este sueño, ella ha estado
+          conmigo en muchas de las etapas más importantes. Me ha
+          apoyado cuando las cosas han salido bien, pero sobre todo
+          cuando han llegado los momentos difíciles.
+        </p>
+
+        <p>
+          Muchas veces hizo esfuerzos para ayudarme a seguir adelante
+          y buscar nuevas oportunidades. Su apoyo no solamente ha sido
+          económico, también ha sido emocional.
+        </p>
+
+        <p>
+          Sus palabras, sus consejos y la confianza que siempre ha
+          tenido en mí me han dado fuerzas para continuar.
+        </p>
+
+        <p>
+          <strong>
+            Si hoy sigo persiguiendo mi sueño, una parte importante
+            se la debo a mi mamá. ❤️
+          </strong>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- ZURI -->
+
+    <div class="persona">
+
+      <button onclick="togglePersona(this)">
+        Zuri Elizabeth Flores Alamilla
+      </button>
+
+      <div class="persona-contenido">
+
+        <p>
+          <strong>Zuri Elizabeth Flores Alamilla</strong> es una de
+          las personas más importantes de mi vida y también forma
+          parte de mi historia dentro y fuera del fútbol.
+        </p>
+
+        <p>
+          Desde jóvenes hemos compartido muchos momentos, sueños y
+          etapas que han dejado una huella importante en mi vida.
+          Durante momentos difíciles, cuando las cosas no salían como
+          esperaba, ella estuvo ahí para escucharme, entenderme y
+          darme su apoyo.
+        </p>
+
+        <p>
+          Con ella también llegué a imaginar un futuro juntos,
+          formar nuestra propia familia y construir una vida
+          compartiendo nuestros sueños.
+        </p>
+
+        <p>
+          Nuestra relación también ha pasado por momentos difíciles,
+          pero cada etapa me ha dejado aprendizajes y recuerdos que
+          forman parte de quien soy.
+        </p>
+
+        <p>
+          <strong>
+            Zuri ocupa un lugar importante en mi historia. ❤️
+          </strong>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- DON RUDY -->
+
+    <div class="persona">
+
+      <button onclick="togglePersona(this)">
+        Don Rudy
+      </button>
+
+      <div class="persona-contenido">
+
+        <p>
+          Don Rudy fue una de las personas que más marcó mi vida.
+          Para mí fue mucho más que alguien que me daba consejos.
+          Fue como un segundo padre.
+        </p>
+
+        <p>
+          Creyó en mí desde una etapa importante de mi vida y siempre
+          tuvo palabras que me ayudaron a seguir adelante.
+        </p>
+
+        <p>
+          Me hubiera gustado que pudiera verme continuar con mi sueño,
+          regresar después de las lesiones y volver a pisar una cancha.
+        </p>
+
+        <p>
+          Aunque ya no está físicamente, sus enseñanzas, sus consejos
+          y todo lo que viví con él siguen formando parte de mi historia.
+        </p>
+
+        <p>
+          <strong>
+            Descansa en paz, Don Rudy. Siempre serás parte de mi camino. ❤️
+          </strong>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- TÍO JULIO -->
+
+    <div class="persona">
+
+      <button onclick="togglePersona(this)">
+        Mi tío Julio
+      </button>
+
+      <div class="persona-contenido">
+
+        <p>
+          Mi tío Julio ocupa un lugar muy especial en mi vida.
+          Ha formado parte de mi historia desde que era pequeño y
+          me enseñó muchas cosas que van más allá del fútbol.
+        </p>
+
+        <p>
+          Guardo muchos recuerdos y enseñanzas de los momentos que
+          compartimos. Todo eso forma parte de la persona que soy
+          actualmente y de la manera en que veo la vida.
+        </p>
+
+        <p>
+          Aunque ya no esté físicamente, las personas importantes
+          nunca desaparecen completamente. Sus enseñanzas, sus
+          recuerdos y todo lo que dejaron en nosotros continúan
+          acompañándonos.
+        </p>
+
+        <p>
+          <strong>
+            Mi tío Julio siempre será parte de mi historia. ❤️
+          </strong>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     COMPARTIR
+========================= -->
+
+<section id="compartir" class="compartir">
+
+  <h2>📲 Comparte mi historia</h2>
+
+  <p>
+    Si quieres compartir mi página, puedes hacerlo desde aquí.
+  </p>
+
+  <div class="botones-compartir">
+
+    <a
+      class="boton-compartir"
+      href="https://wa.me/?text=Mira%20la%20historia%20de%20Miguel%20Ángel%20Sánchez%20Dionisio%20https%3A%2F%2Fmiguelangelsanchez8.github.io%2F"
+      target="_blank">
+      WhatsApp
+    </a>
+
+
+    <a
+      class="boton-compartir"
+      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmiguelangelsanchez8.github.io%2F"
+      target="_blank">
+      Facebook
+    </a>
+
+
+    <button
+      class="boton-compartir"
+      onclick="compartirPagina()">
+      📤 Compartir
+    </button>
+
+
+    <button
+      class="boton-compartir"
+      onclick="copiarEnlace()">
+      🔗 Copiar enlace
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SUEÑO
+========================= -->
+
+<section class="sueño">
+
+  <h2>El sueño continúa</h2>
+
+  <p>
+    Sí. El sueño sigue.
+  </p>
+
+  <p>
+    Y ahora voy por más. ⚽🔥
+  </p>
+
+</section>
+
+
+<!-- =========================
+     BOTÓN ARRIBA
+========================= -->
+
+<button id="arriba" onclick="volverArriba()">
+  ↑
+</button>
+
+
+<!-- =========================
+     MODAL FOTO
+========================= -->
+
+<div id="modalFoto" onclick="cerrarFoto()">
+
+  <span id="cerrarFoto">×</span>
+
+  <img id="fotoGrande" src="" alt="Foto ampliada">
+
+</div>
+
+
+<footer>
+
+  © 2026 Miguel Ángel Sánchez Dionisio · Futbolista
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+  /* PERSONAS */
+
+  function togglePersona(button) {
+
+    const tarjeta = button.parentElement;
+
+    tarjeta.classList.toggle("activa");
+
+  }
+
+
+  /* FOTO GRANDE */
+
+  function abrirFoto(src) {
+
+    document.getElementById("fotoGrande").src = src;
+
+    document.getElementById("modalFoto").style.display = "flex";
+
+  }
+
+
+  function cerrarFoto() {
+
+    document.getElementById("modalFoto").style.display = "none";
+
+  }
+
+
+  /* BOTÓN ARRIBA */
+
+  window.addEventListener("scroll", function() {
+
+    const boton = document.getElementById("arriba");
+
+    if (window.scrollY > 500) {
+
+      boton.classList.add("visible");
+
+    } else {
+
+      boton.classList.remove("visible");
+
+    }
+
+  });
+
+
+  function volverArriba() {
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+  }
+
+
+  /* COMPARTIR */
+
+  async function compartirPagina() {
+
+    const datos = {
+      title: "Miguel Ángel Sánchez Dionisio | Futbolista",
+      text: "Conoce la historia de Miguel Ángel Sánchez Dionisio, futbolista mexicano.",
+      url: "https://miguelangelsanchez8.github.io/"
+    };
+
+    if (navigator.share) {
+
+      try {
+
+        await navigator.share(datos);
+
+      } catch (error) {
+
+        console.log("Compartir cancelado");
+
+      }
+
+    } else {
+
+      copiarEnlace();
+
+      alert("El enlace fue copiado. Ya puedes pegarlo donde quieras.");
+
+    }
+
+  }
+
+
+  /* COPIAR ENLACE */
+
+  function copiarEnlace() {
+
+    const enlace = "https://miguelangelsanchez8.github.io/";
+
+    navigator.clipboard.writeText(enlace)
+      .then(function() {
+
+        alert("¡Enlace copiado! 🔗");
+
+      })
+      .catch(function() {
+
+        prompt("Copia este enlace:", enlace);
+
+      });
+
+  }
+
+
+  /* CERRAR FOTO CON ESC */
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+      cerrarFoto();
+
+    }
+
+  });
+
+</script>
+
+</body>
+        </html>
